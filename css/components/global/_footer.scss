@@ -1,0 +1,86 @@
+.footer {
+  background: $black;
+  padding-block: 60px;
+
+  a {
+    color: $gray;
+  }
+
+  .box-width {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .content {
+      display: flex;
+
+      span {
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        letter-spacing: 5%;
+        color: $white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+      }
+
+      .contact,
+      .informations {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          font-family: "Poppins", sans-serif;
+          font-size: 16px;
+          font-size: 500;
+          line-height: 24px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .contact {
+        margin-right: 120px;
+        .box-contact {
+          display: flex;
+          flex-direction: column;
+          margin-block: 36px;
+          gap: 10px;
+        }
+
+        .box-address {
+          width: 250px;
+        }
+
+        .midia-social {
+          margin-top: 32px;
+
+          a {
+            text-decoration: none;
+            &:nth-of-type(2) {
+              margin: 0 16px;
+            }
+          }
+        }
+      }
+
+      .informations {
+        span {
+          margin-bottom: 36px;
+        }
+
+        a {
+          margin-top: 8px;
+
+          &:nth-of-type(1) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
