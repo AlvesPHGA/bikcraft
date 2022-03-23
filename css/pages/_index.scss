@@ -221,4 +221,37 @@
       }
     }
   }
+
+  .partness {
+    padding: 80px 0;
+
+    .titles-sec {
+      margin-bottom: 44px;
+    }
+
+    .box-partness {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      li {
+        display: flex;
+        border-left: 1px solid $silver_sand;
+        padding: 20px 0;
+
+        &:nth-child(1),
+        &:nth-child(5) {
+          border: 0;
+        }
+
+        &:nth-child(n + 5) {
+          border-top: 1px solid $silver_sand;
+        }
+
+        img {
+          margin: auto;
+        }
+      }
+    }
+  }
 }
