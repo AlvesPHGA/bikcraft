@@ -1,5 +1,10 @@
 @import "main/main";
 @import "utils/colors";
+@import "utils/class-utils";
 
-@import "components/global/header";
-@import "components/global/footer";
+@import "includes/components/button";
+
+@import "includes/global/header";
+@import "includes/global/footer";
+
+@import "pages/index";

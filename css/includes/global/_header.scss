@@ -22,9 +22,31 @@
         font-size: 18px;
         font-weight: 500;
         line-height: 32px;
+        position: relative;
 
         &:nth-of-type(2) {
           margin: 0 40px;
+        }
+
+        &::after {
+          position: absolute;
+          width: 0;
+          content: "";
+          height: 2px;
+          border-radius: 5px;
+          top: 28px;
+          left: 0;
+        }
+
+        &:hover {
+          color: $selective_yellow;
+          transition: all 0.7s linear;
+
+          &::after {
+            transition: all 0.7s linear;
+            width: 100%;
+            background: $selective_yellow;
+          }
         }
       }
     }
