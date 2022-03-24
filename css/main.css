@@ -486,4 +486,71 @@ a {
 .page-index .partness .box-partness li img {
   margin: auto;
 }
+
+.page-index .comments {
+  background: #ffbb00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-index .comments .box-img {
+  height: 70vh;
+}
+
+.page-index .comments .box-img img {
+  height: 100%;
+}
+
+.page-index .comments .__width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page-index .comments .box-comment {
+  width: 630px;
+}
+
+.page-index .comments .box-comment p {
+  font-size: 32px;
+  line-height: 44px;
+  font-style: italic;
+  font-family: "Libre Baskerville", serif;
+  position: relative;
+}
+
+.page-index .comments .box-comment p::before {
+  content: url("../../images/dooble_quote_left.svg");
+  position: absolute;
+  bottom: 150px;
+  right: 630px;
+}
+
+.page-index .comments .box-comment p::after {
+  content: url("../../images/dooble_quote_right.svg");
+  position: absolute;
+  bottom: 10px;
+  right: 390px;
+}
+
+.page-index .comments .box-comment span {
+  font-size: 20px;
+  line-height: 32px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  color: #808080;
+}
 /*# sourceMappingURL=main.css.map */
