@@ -309,4 +309,107 @@
       }
     }
   }
+
+  .insurance {
+    background: $chinese_black;
+    padding: 80px 0;
+
+    .titles-sec {
+      color: $white;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      justify-content: space-between;
+
+      .legend {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .silver,
+      .gold {
+        padding: 32px 40px;
+        background: $black;
+        border-radius: 5px;
+
+        .header-ins {
+          display: flex;
+          gap: 260px;
+
+          .box-price {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            .price {
+              color: $white;
+              font-family: "Poppins", sans-serif;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 40px;
+            }
+
+            .month {
+              font-size: 16px;
+              line-height: 20px;
+              color: $dim_gray;
+              font-family: "Roboto Mono", monospace;
+              font-weight: 500;
+            }
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          list-style: none;
+          margin-block: 20px;
+
+          li {
+            color: $white;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            font-family: "Roboto Mono", monospace;
+
+            &::before {
+              position: relative;
+              content: url("../../images/icones/lista.svg");
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+
+      .silver {
+        .legend {
+          color: $gray;
+        }
+
+        .btn {
+          background: $charleston_green;
+          color: $white;
+          margin-left: 20px;
+        }
+      }
+
+      .gold {
+        .legend {
+          color: $chinese_gold;
+        }
+
+        .btn {
+          background: $chinese_gold;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
 }
