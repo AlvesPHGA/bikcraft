@@ -1,0 +1,221 @@
+.page-insurance {
+  .sec-insure {
+    background: $chinese_black;
+    padding-bottom: 80px;
+
+    .titles-sec {
+      color: $white;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .legend {
+        @include legend;
+      }
+
+      .silver,
+      .gold {
+        padding: 32px 40px;
+        background: $black;
+        border-radius: 5px;
+
+        .header-ins {
+          display: flex;
+          gap: 260px;
+
+          .box-price {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            .price {
+              @include font-poppins;
+              color: $white;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 40px;
+            }
+
+            .month {
+              @include font-roboto;
+              font-size: 16px;
+              line-height: 20px;
+              color: $dim_gray;
+              font-weight: 500;
+            }
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          list-style: none;
+          margin-block: 20px;
+
+          li {
+            color: $white;
+            font-weight: 500;
+            @include roboto-01;
+            font-size: 18px;
+
+            &::before {
+              position: relative;
+              content: url("../../images/icones/lista.svg");
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+
+      .silver {
+        .legend {
+          color: $gray;
+        }
+
+        .btn {
+          background: $charleston_green;
+          color: $white;
+          margin-left: 20px;
+        }
+      }
+
+      .gold {
+        .legend {
+          color: $chinese_gold;
+        }
+
+        .btn {
+          background: $chinese_gold;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  .benefits {
+    background: $black;
+    padding: 80px 0;
+    color: $white;
+
+    .box-benefits {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: space-between;
+      gap: 40px;
+
+      .benefit {
+        width: 320px;
+
+        .legend {
+          display: flex;
+          flex-direction: column;
+          margin: 4px 0 8px;
+          @include legend-02($f_size: 28px, $l_height: 36px);
+        }
+
+        p {
+          @include roboto-03($f_size: 18px, $l_height: 28px);
+        }
+
+        &:nth-of-type(1) {
+          .legend {
+            &:before {
+              height: 32px;
+              content: url("../../images/icones/eletrica.svg");
+            }
+          }
+        }
+
+        &:nth-of-type(2) {
+          .legend {
+            &:before {
+              height: 32px;
+              content: url("../../images/icones/carbono.svg");
+            }
+          }
+        }
+
+        &:nth-of-type(3) {
+          .legend {
+            &:before {
+              height: 32px;
+              content: url("../../images/icones/sustentavel.svg");
+            }
+          }
+        }
+
+        &:nth-of-type(4) {
+          .legend {
+            &:before {
+              height: 32px;
+              content: url("../../images/icones/rastreador.svg");
+            }
+          }
+        }
+
+        &:nth-of-type(5) {
+          .legend {
+            &:before {
+              height: 32px;
+              content: url("../../images/icones/seguro.svg");
+            }
+          }
+        }
+
+        &:nth-of-type(6) {
+          .legend {
+            &:before {
+              height: 32px;
+              content: url("../../images/icones/velocidade.svg");
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .questions {
+    padding: 80px 0;
+    .box-questions {
+      margin-top: 40px;
+
+      .question {
+        padding: 20px;
+
+        &:nth-child(odd) {
+          background: #ebebeb;
+        }
+
+        .header-q {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          h3 {
+            @include roboto-03($f_size: 28px, $l_height: 52px);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &::before {
+              content: "";
+              width: 20px;
+              height: 10px;
+              background: $selective_yellow;
+            }
+          }
+
+          img {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

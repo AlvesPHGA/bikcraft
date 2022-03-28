@@ -25,6 +25,12 @@
   line-height: 24px;
 }
 
+@mixin roboto-03($f_size, $l_height) {
+  @include font-roboto;
+  font-size: $f_size;
+  line-height: $l_height;
+}
+
 @mixin poppins-01 {
   @include font-poppins;
   font-size: 20px;
