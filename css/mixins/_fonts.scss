@@ -1,0 +1,59 @@
+@mixin font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+@mixin font-roboto {
+  font-family: "Roboto Mono", monospace;
+}
+
+@mixin title-h1 {
+  @include font-poppins;
+  font-size: 68px;
+  line-height: 76px;
+  font-weight: 700;
+}
+
+@mixin roboto-01 {
+  @include font-roboto;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin roboto-02 {
+  @include font-roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin poppins-01 {
+  @include font-poppins;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin poppins-02 {
+  @include font-poppins;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin list($f_size, $l_height) {
+  @include font-poppins;
+  font-size: $f_size;
+  line-height: $l_height;
+}
+
+@mixin legend {
+  @include font-poppins;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+@mixin legend-02($f_size, $l_height) {
+  @include font-poppins;
+  font-weight: 700;
+  font-size: $f_size;
+  line-height: $l_height;
+}

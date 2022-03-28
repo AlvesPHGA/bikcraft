@@ -4,10 +4,7 @@
     padding: 80px 0;
 
     h1 {
-      font-family: "Poppins", sans-serif;
-      font-size: 68px;
-      line-height: 76px;
-      font-weight: 700;
+      @include title-h1;
       color: $white;
 
       span {
@@ -17,9 +14,7 @@
 
     p {
       color: $american_silver;
-      font-size: 20px;
-      line-height: 28px;
-      font-family: "Roboto Mono", monospace;
+      @include roboto-01;
     }
 
     .__width {
@@ -80,16 +75,13 @@
           padding-left: 30px;
 
           .legend {
+            @include poppins-01;
             color: $black;
-            font-size: 20px;
-            line-height: 28px;
             font-weight: 700;
-            font-family: "Poppins", sans-serif;
           }
 
           .price {
-            font-family: "Roboto Mono", monospace;
-            font-size: 16px;
+            @include roboto-02;
             line-height: 20px;
             color: $gray;
             font-weight: 500;
@@ -114,12 +106,10 @@
     padding: 48px 0;
 
     .legend {
+      @include roboto-01;
       text-transform: uppercase;
       font-weight: 500;
-      font-size: 20px;
-      line-height: 28px;
       color: $gray;
-      font-family: "Roboto Mono", monospace;
     }
 
     .titles-sec {
@@ -134,18 +124,16 @@
         width: 600px;
 
         p {
-          font-size: 20px;
+          @include roboto-01;
           color: $white;
-          line-height: 28px;
-          font-family: "Roboto Mono", monospace;
           font-weight: 500;
           margin: 44px 0 20px;
           width: 550px;
         }
 
         a {
+          @include font-poppins;
           text-transform: uppercase;
-          font-family: "Poppins", sans-serif;
           color: $selective_yellow;
           font-weight: 500;
           position: relative;
@@ -177,16 +165,12 @@
         span {
           text-transform: uppercase;
           font-weight: 700;
-          font-family: "Poppins", sans-serif;
-          font-size: 24px;
-          line-height: 28px;
+          @include poppins-02;
         }
 
         p {
-          font-family: "Roboto Mono", monospace;
           font-weight: 500;
-          font-size: 16px;
-          line-height: 24px;
+          @include roboto-02;
         }
 
         .electric {
@@ -229,10 +213,10 @@
       margin-bottom: 44px;
     }
 
-    .box-partness {
+    ul {
       list-style: none;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 
       li {
         display: flex;
@@ -301,11 +285,9 @@
       }
 
       span {
-        font-size: 20px;
-        line-height: 32px;
-        font-family: "Roboto Mono", monospace;
         font-weight: 700;
         color: $gray;
+        @include roboto-01;
       }
     }
   }
@@ -325,11 +307,7 @@
       justify-content: space-between;
 
       .legend {
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 44px;
-        font-family: "Poppins", sans-serif;
+        @include legend;
       }
 
       .silver,
@@ -348,18 +326,18 @@
             text-align: right;
 
             .price {
+              @include font-poppins;
               color: $white;
-              font-family: "Poppins", sans-serif;
               font-weight: 500;
               font-size: 32px;
               line-height: 40px;
             }
 
             .month {
+              @include font-roboto;
               font-size: 16px;
               line-height: 20px;
               color: $dim_gray;
-              font-family: "Roboto Mono", monospace;
               font-weight: 500;
             }
           }
@@ -374,10 +352,9 @@
 
           li {
             color: $white;
-            font-size: 18px;
             font-weight: 500;
-            line-height: 28px;
-            font-family: "Roboto Mono", monospace;
+            @include roboto-01;
+            font-size: 18px;
 
             &::before {
               position: relative;

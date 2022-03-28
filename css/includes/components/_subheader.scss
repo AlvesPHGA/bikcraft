@@ -1,0 +1,20 @@
+.subheader {
+  background: $chinese_black;
+  padding: 60px 0;
+
+  .legend {
+    @include roboto-01;
+    color: $gray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .titles-sec {
+    color: $white;
+    margin-top: 12px;
+
+    span {
+      color: $selective_yellow;
+    }
+  }
+}

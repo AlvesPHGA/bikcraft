@@ -2,9 +2,13 @@
 @import "utils/colors";
 @import "utils/class-utils";
 
+@import "mixins/fonts";
+
 @import "includes/components/button";
+@import "includes/components/subheader";
 
 @import "includes/global/header";
 @import "includes/global/footer";
 
 @import "pages/index";
+@import "pages/bikes";

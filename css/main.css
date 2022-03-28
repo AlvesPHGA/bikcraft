@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -42,6 +42,29 @@ a {
   cursor: pointer;
 }
 
+.subheader {
+  background: #121212;
+  padding: 60px 0;
+}
+
+.subheader .legend {
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  line-height: 28px;
+  color: #808080;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subheader .titles-sec {
+  color: #ffffff;
+  margin-top: 12px;
+}
+
+.subheader .titles-sec span {
+  color: #ffbb00;
+}
+
 .header {
   background: #000000;
   color: #ffffff;
@@ -50,8 +73,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header a {
@@ -65,11 +88,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Poppins", sans-serif;
 }
 
@@ -123,11 +146,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer .box-width .content {
@@ -153,8 +176,8 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer .box-width .content .contact a,
@@ -180,8 +203,8 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-block: 36px;
   gap: 10px;
 }
@@ -233,9 +256,9 @@ a {
 
 .page-index .subheader p {
   color: #d1d1d1;
+  font-family: "Roboto Mono", monospace;
   font-size: 20px;
   line-height: 28px;
-  font-family: "Roboto Mono", monospace;
 }
 
 .page-index .subheader .__width {
@@ -243,8 +266,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .page-index .subheader .__width .content {
@@ -281,8 +304,8 @@ a {
   gap: 20px;
   width: 100%;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 72px;
 }
 
@@ -301,8 +324,8 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 2px;
   position: relative;
   margin-top: 12px;
@@ -310,16 +333,17 @@ a {
 }
 
 .page-index .prod-bikes .bikes .card .info-bike .legend {
-  color: #000000;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   line-height: 28px;
+  color: #000000;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
 }
 
 .page-index .prod-bikes .bikes .card .info-bike .price {
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
+  line-height: 24px;
   line-height: 20px;
   color: #808080;
   font-weight: 500;
@@ -341,12 +365,12 @@ a {
 }
 
 .page-index .diferentials .legend {
-  text-transform: uppercase;
-  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
   font-size: 20px;
   line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 500;
   color: #808080;
-  font-family: "Roboto Mono", monospace;
 }
 
 .page-index .diferentials .titles-sec {
@@ -358,8 +382,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .page-index .diferentials .content .description {
@@ -367,18 +391,18 @@ a {
 }
 
 .page-index .diferentials .content .description p {
-  font-size: 20px;
-  color: #ffffff;
-  line-height: 28px;
   font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
   font-weight: 500;
   margin: 44px 0 20px;
   width: 550px;
 }
 
 .page-index .diferentials .content .description a {
-  text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
   color: #ffbb00;
   font-weight: 500;
   position: relative;
@@ -415,8 +439,8 @@ a {
 }
 
 .page-index .diferentials .content .technology p {
-  font-family: "Roboto Mono", monospace;
   font-weight: 500;
+  font-family: "Roboto Mono", monospace;
   font-size: 16px;
   line-height: 24px;
 }
@@ -459,15 +483,15 @@ a {
   margin-bottom: 44px;
 }
 
-.page-index .partness .box-partness {
+.page-index .partness ul {
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr);
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.page-index .partness .box-partness li {
+.page-index .partness ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,16 +499,15 @@ a {
   padding: 20px 0;
 }
 
-.page-index .partness .box-partness li:nth-child(1),
-.page-index .partness .box-partness li:nth-child(5) {
+.page-index .partness ul li:nth-child(1), .page-index .partness ul li:nth-child(5) {
   border: 0;
 }
 
-.page-index .partness .box-partness li:nth-child(n + 5) {
+.page-index .partness ul li:nth-child(n + 5) {
   border-top: 1px solid #c4c4c4;
 }
 
-.page-index .partness .box-partness li img {
+.page-index .partness ul li img {
   margin: auto;
 }
 
@@ -494,11 +517,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .page-index .comments .box-img {
@@ -514,11 +537,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page-index .comments .box-comment {
@@ -548,11 +571,11 @@ a {
 }
 
 .page-index .comments .box-comment span {
-  font-size: 20px;
-  line-height: 32px;
-  font-family: "Roboto Mono", monospace;
   font-weight: 700;
   color: #808080;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .page-index .insurance {
@@ -569,20 +592,20 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .page-index .insurance .content .legend {
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  font-family: "Poppins", sans-serif;
 }
 
 .page-index .insurance .content .silver,
@@ -607,15 +630,15 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: right;
 }
 
 .page-index .insurance .content .silver .header-ins .box-price .price,
 .page-index .insurance .content .gold .header-ins .box-price .price {
-  color: #ffffff;
   font-family: "Poppins", sans-serif;
+  color: #ffffff;
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
@@ -623,10 +646,10 @@ a {
 
 .page-index .insurance .content .silver .header-ins .box-price .month,
 .page-index .insurance .content .gold .header-ins .box-price .month {
+  font-family: "Roboto Mono", monospace;
   font-size: 16px;
   line-height: 20px;
   color: #696969;
-  font-family: "Roboto Mono", monospace;
   font-weight: 500;
 }
 
@@ -637,8 +660,8 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 16px;
   list-style: none;
   margin-block: 20px;
@@ -647,10 +670,11 @@ a {
 .page-index .insurance .content .silver ul li,
 .page-index .insurance .content .gold ul li {
   color: #ffffff;
-  font-size: 18px;
   font-weight: 500;
-  line-height: 28px;
   font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  line-height: 28px;
+  font-size: 18px;
 }
 
 .page-index .insurance .content .silver ul li::before,
@@ -677,5 +701,180 @@ a {
 .page-index .insurance .content .gold .btn {
   background: #ca9700;
   margin-left: 20px;
+}
+
+.page-bikes .bikes {
+  padding: 80px 0;
+}
+
+.page-bikes .bikes .box-bike a {
+  display: block;
+}
+
+.page-bikes .bikes .box-bike .__width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 46px;
+  padding: 40px 0;
+}
+
+.page-bikes .bikes .box-bike .__width .img {
+  width: 500px;
+  height: 320px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.page-bikes .bikes .box-bike .__width .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.page-bikes .bikes .box-bike .__width .img span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  padding: 8px 16px 8px 8px;
+  background: #000000;
+  border-radius: 5px 0 0 5px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike {
+  width: 550px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .legend-02 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  position: relative;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .legend-02::before {
+  content: "";
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  background: #ffbb00;
+  bottom: 45px;
+  border-radius: 5px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  line-height: 24px;
+  margin-block: 20px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components ul {
+  list-style: none;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components ul li:nth-of-type(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  gap: 8px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components ul li:nth-of-type(1)::before {
+  content: url("../../images/icones/eletrica.svg");
+  height: 32px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components ul li:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components ul li:nth-of-type(2)::before {
+  content: url("../../images/icones/carbono.svg");
+  height: 32px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components ul li:nth-of-type(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components ul li:nth-of-type(3)::before {
+  content: url("../../images/icones/velocidade.svg");
+  height: 32px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components ul li:nth-of-type(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.page-bikes .bikes .box-bike .__width .info-bike .components ul li:nth-of-type(4)::before {
+  content: url("../../images/icones/rastreador.svg");
+  height: 32px;
+}
+
+.page-bikes .bikes .magic-might {
+  position: relative;
+  color: #ffffff;
+}
+
+.page-bikes .bikes .magic-might .black {
+  width: 70%;
+  position: absolute;
+  right: 0;
+  background: #121212;
+  height: 100%;
+  z-index: 0;
 }
 /*# sourceMappingURL=main.css.map */

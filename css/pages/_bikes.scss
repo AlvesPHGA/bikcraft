@@ -1,0 +1,135 @@
+.page-bikes {
+  .bikes {
+    padding: 80px 0;
+
+    .box-bike {
+      a {
+        display: block;
+      }
+      .__width {
+        display: flex;
+        align-items: center;
+        gap: 46px;
+        padding: 40px 0;
+
+        .img {
+          width: 500px;
+          height: 320px;
+          border-radius: 5px;
+          position: relative;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+
+          span {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            @include poppins-02;
+            color: $white;
+            padding: 8px 16px 8px 8px;
+            background: $black;
+            border-radius: 5px 0 0 5px;
+          }
+        }
+
+        .info-bike {
+          width: 550px;
+          .legend-02 {
+            @include legend-02($f_size: 40px, $l_height: 48px);
+            position: relative;
+
+            &::before {
+              content: "";
+              width: 20px;
+              height: 5px;
+              position: absolute;
+              background: $selective_yellow;
+              bottom: 45px;
+              border-radius: 5px;
+            }
+          }
+
+          p {
+            @include roboto-02;
+            margin-block: 20px;
+          }
+
+          .components {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            ul {
+              list-style: none;
+
+              li {
+                @include list($f_size: 16px, $l_height: 24px);
+                margin-top: 4px;
+                font-weight: 500;
+
+                &:nth-of-type(1) {
+                  display: flex;
+                  align-items: center;
+                  margin-top: 0;
+                  gap: 8px;
+                  &::before {
+                    content: url("../../images/icones/eletrica.svg");
+                    height: 32px;
+                  }
+                }
+
+                &:nth-of-type(2) {
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                  &::before {
+                    content: url("../../images/icones/carbono.svg");
+                    height: 32px;
+                  }
+                }
+
+                &:nth-of-type(3) {
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                  &::before {
+                    content: url("../../images/icones/velocidade.svg");
+                    height: 32px;
+                  }
+                }
+
+                &:nth-of-type(4) {
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                  &::before {
+                    content: url("../../images/icones/rastreador.svg");
+                    height: 32px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .magic-might {
+      position: relative;
+      color: $white;
+
+      .black {
+        width: 70%;
+        position: absolute;
+        right: 0;
+        background: $chinese_black;
+        height: 100%;
+        z-index: 0;
+      }
+    }
+  }
+}
