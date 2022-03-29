@@ -1128,4 +1128,321 @@ a {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+
+.page-contact {
+  background: #efebeb;
+}
+
+.page-contact .sec-contact {
+  position: relative;
+}
+
+.page-contact .sec-contact .back-black {
+  height: 70%;
+  background: #121212;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.page-contact .sec-contact .__width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 45px 40px;
+}
+
+.page-contact .sec-contact .__width .info-cont {
+  padding: 45px 135px 45px 40px;
+  background: #000000;
+  border-radius: 5px 0 0 5px;
+  -webkit-box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.49);
+          box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.49);
+}
+
+.page-contact .sec-contact .__width .info-cont .legend {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.page-contact .sec-contact .__width .info-cont a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 28px;
+  color: #9c9c9c;
+  font-weight: 500;
+  display: block;
+}
+
+.page-contact .sec-contact .__width .info-cont .street {
+  margin: 35px 0 20px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.page-contact .sec-contact .__width .info-cont .street::before {
+  content: url("../../images/icones/local.svg");
+  height: 32px;
+  margin-top: 2px;
+  position: absolute;
+  right: 160px;
+  top: 5px;
+}
+
+.page-contact .sec-contact .__width .info-cont .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.page-contact .sec-contact .__width .info-cont .email::before {
+  content: url("../../images/icones/email.svg");
+  height: 32px;
+  margin-top: 2px;
+  position: absolute;
+  right: 230px;
+  top: 5px;
+}
+
+.page-contact .sec-contact .__width .info-cont .phone {
+  margin: 20px 0 24px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.page-contact .sec-contact .__width .info-cont .phone::before {
+  content: url("../../images/icones/telefone.svg");
+  height: 32px;
+  margin-top: 2px;
+  position: absolute;
+  right: 230px;
+  top: 3px;
+}
+
+.page-contact .sec-contact .__width .info-cont .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.page-contact .sec-contact .__width .form-cont {
+  padding: 45px 40px;
+  background: #ffffff;
+  width: 700px;
+  border-radius: 0 5px 5px 0;
+  -webkit-box-shadow: 2px 5px 14px 0px rgba(0, 0, 0, 0.49);
+          box-shadow: 2px 5px 14px 0px rgba(0, 0, 0, 0.49);
+}
+
+.page-contact .sec-contact .__width .form-cont form {
+  width: 100%;
+}
+
+.page-contact .sec-contact .__width .form-cont form label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.page-contact .sec-contact .__width .form-cont form input {
+  height: 50px;
+}
+
+.page-contact .sec-contact .__width .form-cont form input,
+.page-contact .sec-contact .__width .form-cont form textarea {
+  background: #d1d1d1;
+  border-radius: 5px;
+  border: none;
+  padding: 16px;
+  font-weight: 600;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page-contact .sec-contact .__width .form-cont form textarea {
+  resize: none;
+  height: 200px;
+}
+
+.page-contact .sec-contact .__width .form-cont form .name-tel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.page-contact .sec-contact .__width .form-cont form .name-tel .name,
+.page-contact .sec-contact .__width .form-cont form .name-tel .tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.page-contact .sec-contact .__width .form-cont form .name-tel input {
+  width: 300px;
+}
+
+.page-contact .sec-contact .__width .form-cont form .email,
+.page-contact .sec-contact .__width .form-cont form .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.page-contact .sec-contact .__width .form-cont form .message {
+  margin: 20px 0 28px;
+}
+
+.page-contact .sec-contact .__width .form-cont form .btn {
+  background: #ca9700;
+}
+
+.page-contact .our-store {
+  padding: 80px 0;
+}
+
+.page-contact .our-store .box-store {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-contact .our-store .box-store .card-store {
+  width: 580px;
+  background: #ffffff;
+  padding-bottom: 40px;
+  border-radius: 5px;
+}
+
+.page-contact .our-store .box-store .card-store .img {
+  width: 100%;
+  height: 200px;
+}
+
+.page-contact .our-store .box-store .card-store .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 5px 5px 0 0;
+}
+
+.page-contact .our-store .box-store .card-store .infos {
+  padding: 40px 0 0 20px;
+}
+
+.page-contact .our-store .box-store .card-store .infos .legend {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.page-contact .our-store .box-store .card-store .infos .legend::before {
+  content: "";
+  width: 15px;
+  height: 5px;
+  background: #ffbb00;
+}
+
+.page-contact .our-store .box-store .card-store .infos .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  padding-left: 20px;
+  margin: 20px 0 60px;
+}
+
+.page-contact .our-store .box-store .card-store .infos .info a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.page-contact .our-store .box-store .card-store .infos .info .end {
+  border-left: 2px solid #c4c4c4;
+  padding-left: 20px;
+}
+
+.page-contact .our-store .box-store .card-store .infos .info .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  border-left: 2px solid #c4c4c4;
+}
+
+.page-contact .our-store .box-store .card-store .infos .hours {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-left: 8px;
+}
+
+.page-contact .our-store .box-store .card-store .infos .hours::before {
+  content: url("../../images/icones/horario.svg");
+  height: 22px;
+}
 /*# sourceMappingURL=main.css.map */
