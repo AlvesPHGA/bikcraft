@@ -259,10 +259,11 @@ a {
 }
 
 .page-index .subheader p {
-  color: #d1d1d1;
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   line-height: 28px;
+  font-weight: 500;
+  color: #d1d1d1;
 }
 
 .page-index .subheader .__width {
@@ -372,9 +373,9 @@ a {
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   line-height: 28px;
-  text-transform: uppercase;
   font-weight: 500;
   color: #808080;
+  text-transform: uppercase;
 }
 
 .page-index .diferentials .titles-sec {
@@ -398,8 +399,8 @@ a {
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   line-height: 28px;
-  color: #ffffff;
   font-weight: 500;
+  color: #ffffff;
   margin: 44px 0 20px;
   width: 550px;
 }
@@ -443,10 +444,11 @@ a {
 }
 
 .page-index .diferentials .content .technology p {
-  font-weight: 500;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .page-index .diferentials .content .technology .electric span {

@@ -13,8 +13,12 @@
     }
 
     p {
-      color: $american_silver;
-      @include roboto-01;
+      @include text(
+        $f_size: 20px,
+        $l_height: 28px,
+        $f_weight: 500,
+        $color: $american_silver
+      );
     }
 
     .__width {
@@ -106,10 +110,13 @@
     padding: 48px 0;
 
     .legend {
-      @include roboto-01;
+      @include text(
+        $f_size: 20px,
+        $l_height: 28px,
+        $f_weight: 500,
+        $color: $gray
+      );
       text-transform: uppercase;
-      font-weight: 500;
-      color: $gray;
     }
 
     .titles-sec {
@@ -124,9 +131,13 @@
         width: 600px;
 
         p {
-          @include roboto-01;
-          color: $white;
-          font-weight: 500;
+          @include text(
+            $f_size: 20px,
+            $l_height: 28px,
+            $f_weight: 500,
+            $color: $white
+          );
+
           margin: 44px 0 20px;
           width: 550px;
         }
@@ -169,8 +180,12 @@
         }
 
         p {
-          font-weight: 500;
-          @include roboto-02;
+          @include text(
+            $f_size: 16px,
+            $l_height: 24px,
+            $f_weight: 500,
+            $color: $white
+          );
         }
 
         .electric {
