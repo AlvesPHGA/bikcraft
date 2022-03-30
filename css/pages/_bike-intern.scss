@@ -7,6 +7,31 @@
       display: flex;
       justify-content: space-between;
 
+      .gallery {
+        width: 600px;
+
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
+
+        .principal {
+          width: 600px;
+        }
+
+        .select {
+          margin-top: 10px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .item {
+            width: 190px;
+          }
+        }
+      }
+
       .description {
         width: 510px;
 
