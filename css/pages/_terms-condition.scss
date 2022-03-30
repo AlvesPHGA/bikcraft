@@ -1,0 +1,36 @@
+.page-terms-condition {
+  article {
+    padding: 80px 0;
+
+    .content-term {
+      margin-top: 40px;
+      &:first-child {
+        margin-top: 0;
+      }
+      .title {
+        @include title(
+          $f_size: 18px,
+          $l_height: 28px,
+          $f_weight: 600,
+          $color: $chinese_black
+        );
+        margin-bottom: 12px;
+      }
+
+      p {
+        @include text(
+          $f_size: 16px,
+          $l_height: 24px,
+          $f_weight: 500,
+          $color: $black
+        );
+        margin-bottom: 12px;
+        width: 700px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

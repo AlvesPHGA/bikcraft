@@ -13,6 +13,22 @@
   font-weight: 700;
 }
 
+@mixin title($f_size, $l_height, $f_weight, $color) {
+  @include font-poppins;
+  font-size: $f_size;
+  line-height: $l_height;
+  font-weight: $f_weight;
+  color: $color;
+}
+
+@mixin text($f_size, $l_height, $f_weight, $color) {
+  @include font-roboto;
+  font-size: $f_size;
+  line-height: $l_height;
+  font-weight: $f_weight;
+  color: $color;
+}
+
 @mixin roboto-01 {
   @include font-roboto;
   font-size: 20px;
