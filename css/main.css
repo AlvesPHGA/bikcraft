@@ -906,8 +906,8 @@ a {
   font-family: "Roboto Mono", monospace;
   font-size: 24px;
   line-height: 36px;
-  color: #d1d1d1;
   font-weight: 500;
+  color: #d1d1d1;
 }
 
 .page-bike-intern .gallery-description .__width .description .components {
@@ -1280,8 +1280,8 @@ a {
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   line-height: 20px;
-  color: #696969;
   font-weight: 500;
+  color: #696969;
 }
 
 .page-insurance .sec-insure .content .silver ul,
@@ -1300,12 +1300,11 @@ a {
 
 .page-insurance .sec-insure .content .silver ul li,
 .page-insurance .sec-insure .content .gold ul li {
-  color: #ffffff;
-  font-weight: 500;
   font-family: "Roboto Mono", monospace;
-  font-size: 20px;
-  line-height: 28px;
   font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .page-insurance .sec-insure .content .silver ul li::before,

@@ -40,11 +40,12 @@
             }
 
             .month {
-              @include font-roboto;
-              font-size: 16px;
-              line-height: 20px;
-              color: $dim_gray;
-              font-weight: 500;
+              @include text(
+                $f_size: 16px,
+                $l_height: 20px,
+                $f_weight: 500,
+                $color: $dim_gray
+              );
             }
           }
         }
@@ -57,10 +58,12 @@
           margin-block: 20px;
 
           li {
-            color: $white;
-            font-weight: 500;
-            @include roboto-01;
-            font-size: 18px;
+            @include text(
+              $f_size: 18px,
+              $l_height: 28px,
+              $f_weight: 500,
+              $color: $white
+            );
 
             &::before {
               position: relative;

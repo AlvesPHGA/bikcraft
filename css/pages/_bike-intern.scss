@@ -11,9 +11,12 @@
         width: 510px;
 
         p {
-          @include roboto-03($f_size: 24px, $l_height: 36px);
-          color: $american_silver;
-          font-weight: 500;
+          @include text(
+            $f_size: 24px,
+            $l_height: 36px,
+            $f_weight: 500,
+            $color: $american_silver
+          );
         }
 
         .components {
