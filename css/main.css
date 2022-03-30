@@ -1776,4 +1776,250 @@ a {
   content: url("../../images/icones/horario.svg");
   height: 22px;
 }
+
+.page-budget {
+  background: #efebeb;
+}
+
+.page-budget .option-budget {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.page-budget .option-budget .back-black {
+  height: 70%;
+  background: #121212;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.page-budget .option-budget .__width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-budget .option-budget .__width .option-prod {
+  padding: 45px 40px;
+  background: #000000;
+  border-radius: 5px 0 0 5px;
+  -webkit-box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.49);
+          box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.49);
+}
+
+.page-budget .option-budget .__width .option-prod .legend {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #c4c4c4;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.page-budget .option-budget .__width .option-prod .legend::before {
+  content: "";
+  width: 15px;
+  height: 5px;
+  background: #ffbb00;
+  border-radius: 5px;
+}
+
+.page-budget .option-budget .__width .option-prod a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 28px;
+  color: #9c9c9c;
+  font-weight: 500;
+  display: block;
+}
+
+.page-budget .option-budget .__width .option-prod .street {
+  margin: 35px 0 20px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.page-budget .option-budget .__width .option-prod .street::before {
+  content: url("../../images/icones/local.svg");
+  height: 32px;
+  margin-top: 2px;
+  position: absolute;
+  right: 160px;
+  top: 5px;
+}
+
+.page-budget .option-budget .__width .option-prod .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.page-budget .option-budget .__width .option-prod .email::before {
+  content: url("../../images/icones/email.svg");
+  height: 32px;
+  margin-top: 2px;
+  position: absolute;
+  right: 230px;
+  top: 5px;
+}
+
+.page-budget .option-budget .__width .option-prod .phone {
+  margin: 20px 0 24px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.page-budget .option-budget .__width .option-prod .phone::before {
+  content: url("../../images/icones/telefone.svg");
+  height: 32px;
+  margin-top: 2px;
+  position: absolute;
+  right: 230px;
+  top: 3px;
+}
+
+.page-budget .option-budget .__width .option-prod .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.page-budget .option-budget .__width .form-budget {
+  padding: 45px 40px;
+  background: #ffffff;
+  width: 700px;
+  border-radius: 0 5px 5px 0;
+  -webkit-box-shadow: 2px 5px 14px 0px rgba(0, 0, 0, 0.49);
+          box-shadow: 2px 5px 14px 0px rgba(0, 0, 0, 0.49);
+}
+
+.page-budget .option-budget .__width .form-budget form {
+  width: 100%;
+}
+
+.page-budget .option-budget .__width .form-budget form label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.page-budget .option-budget .__width .form-budget form input {
+  height: 50px;
+  background: #d1d1d1;
+  border-radius: 5px;
+  border: none;
+  padding: 16px;
+  font-weight: 600;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page-budget .option-budget .__width .form-budget form .data-person .fullname {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.page-budget .option-budget .__width .form-budget form .data-person .fullname .name,
+.page-budget .option-budget .__width .form-budget form .data-person .fullname .last_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.page-budget .option-budget .__width .form-budget form .data-person .fullname input {
+  width: 300px;
+}
+
+.page-budget .option-budget .__width .form-budget form .data-person .email,
+.page-budget .option-budget .__width .form-budget form .data-person .cpf,
+.page-budget .option-budget .__width .form-budget form .data-person .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.page-budget .option-budget .__width .form-budget form .data-person .cpf {
+  margin-bottom: 20px;
+}
+
+.page-budget .option-budget .__width .form-budget form .data-delivery {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.page-budget .option-budget .__width .form-budget form .data-delivery input {
+  width: 300px;
+}
+
+.page-budget .option-budget .__width .form-budget form .data-delivery .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.page-budget .option-budget .__width .form-budget form .data-delivery .box:first-child {
+  margin-top: 0;
+}
+
+.page-budget .option-budget .__width .form-budget form .data-delivery .box .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.page-budget .option-budget .__width .form-budget form .btn {
+  background: #ca9700;
+}
 /*# sourceMappingURL=main.css.map */
