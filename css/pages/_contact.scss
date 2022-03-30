@@ -214,6 +214,7 @@
             a {
               @include roboto-03($f_size: 18px, $l_height: 28px);
               font-weight: 500;
+              color: $davys_gray;
             }
 
             .end {

@@ -882,6 +882,332 @@ a {
   z-index: 0;
 }
 
+.page-bike-intern .gallery-description {
+  background: #121212;
+  padding-bottom: 80px;
+}
+
+.page-bike-intern .gallery-description .__width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-bike-intern .gallery-description .__width .description {
+  width: 510px;
+}
+
+.page-bike-intern .gallery-description .__width .description p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 24px;
+  line-height: 36px;
+  color: #d1d1d1;
+  font-weight: 500;
+}
+
+.page-bike-intern .gallery-description .__width .description .components {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin: 28px 0 32px;
+}
+
+.page-bike-intern .gallery-description .__width .description .components .info-utils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+}
+
+.page-bike-intern .gallery-description .__width .description .components .info-utils span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #999;
+  background: #000000;
+  padding: 2px 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.page-bike-intern .gallery-description .__width .description .components .info-utils span:nth-of-type(1)::before {
+  content: url("../../images/icones/entrega.svg");
+  height: 15px;
+}
+
+.page-bike-intern .gallery-description .__width .description .components .info-utils span:nth-of-type(2)::before {
+  content: url("../../images/icones/estoque.svg");
+  height: 15px;
+}
+
+.page-bike-intern .gallery-description .__width .description .information {
+  width: 100%;
+}
+
+.page-bike-intern .gallery-description .__width .description .information .legend {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.page-bike-intern .gallery-description .__width .description .information .box-info {
+  padding: 32px 10px;
+  background: #000000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  width: 100%;
+}
+
+.page-bike-intern .gallery-description .__width .description .information .box-info .info {
+  width: 100%;
+}
+
+.page-bike-intern .gallery-description .__width .description .information .box-info .info .legend {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-bike-intern .gallery-description .__width .description .information .box-info .info .legend::before {
+  height: 32px;
+}
+
+.page-bike-intern .gallery-description .__width .description .information .box-info .info p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+.page-bike-intern .gallery-description .__width .description .information .box-info .info:nth-of-type(1) .legend::before {
+  content: url("../../images/icones/eletrica.svg");
+}
+
+.page-bike-intern .gallery-description .__width .description .information .box-info .info:nth-of-type(2) .legend::before {
+  content: url("../../images/icones/velocidade.svg");
+}
+
+.page-bike-intern .gallery-description .__width .description .information .box-info .info:nth-of-type(3) .legend::before {
+  content: url("../../images/icones/carbono.svg");
+}
+
+.page-bike-intern .gallery-description .__width .description .information .box-info .info:nth-of-type(4) .legend::before {
+  content: url("../../images/icones/rastreador.svg");
+}
+
+.page-bike-intern .gallery-description .__width .description .datasheet {
+  margin-top: 32px;
+}
+
+.page-bike-intern .gallery-description .__width .description .datasheet .legend {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.page-bike-intern .gallery-description .__width .description .datasheet ul {
+  background: #000000;
+  border-radius: 5px;
+  list-style: none;
+  width: 100%;
+  padding: 32px;
+}
+
+.page-bike-intern .gallery-description .__width .description .datasheet ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #292929;
+  padding: 8px 0;
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.page-bike-intern .gallery-description .__width .description .datasheet ul li:first-child {
+  padding-top: 0;
+}
+
+.page-bike-intern .gallery-description .__width .description .datasheet ul li:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+.page-bike-intern .gallery-description .__width .description .datasheet ul li span:nth-of-type(1) {
+  color: #ffffff;
+}
+
+.page-bike-intern .gallery-description .__width .description .datasheet ul li span:nth-of-type(2) {
+  color: #9c9c9c;
+}
+
+.page-bike-intern .see-too {
+  padding: 80px 0 140px;
+}
+
+.page-bike-intern .see-too .box-bike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.page-bike-intern .see-too .box-bike .card {
+  width: 515px;
+}
+
+.page-bike-intern .see-too .box-bike .card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.page-bike-intern .see-too .box-bike .card .info-bike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+  position: relative;
+  margin-top: 12px;
+  padding-left: 30px;
+}
+
+.page-bike-intern .see-too .box-bike .card .info-bike .legend {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.page-bike-intern .see-too .box-bike .card .info-bike .price {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 20px;
+  color: #808080;
+  font-weight: 500;
+}
+
+.page-bike-intern .see-too .box-bike .card .info-bike::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 18px;
+  height: 8px;
+  background: #ffbb00;
+}
+
+.page-bike-intern .insurance {
+  position: relative;
+}
+
+.page-bike-intern .insurance img {
+  position: absolute;
+  z-index: 1;
+  left: 5%;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  bottom: 0;
+  width: 500px;
+  height: 600px;
+  border-radius: 5px;
+}
+
+.page-bike-intern .insurance .box-content {
+  background: #121212;
+  padding: 32px;
+}
+
+.page-bike-intern .insurance .box-content .__width {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.page-bike-intern .insurance .box-content .__width .content {
+  width: 600px;
+}
+
+.page-bike-intern .insurance .box-content .__width .content .titles-sec {
+  color: #ffffff;
+}
+
+.page-bike-intern .insurance .box-content .__width .content p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #d1d1d1;
+  margin-block: 20px;
+}
+
+.page-bike-intern .insurance .back-black {
+  height: 50px;
+  width: 100%;
+  background: #000000;
+}
+
 .page-insurance .sec-insure {
   background: #121212;
   padding-bottom: 80px;
@@ -1410,6 +1736,7 @@ a {
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
+  color: #545454;
 }
 
 .page-contact .our-store .box-store .card-store .infos .info .end {

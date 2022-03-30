@@ -1,0 +1,278 @@
+.page-bike-intern {
+  .gallery-description {
+    background: $chinese_black;
+    padding-bottom: 80px;
+
+    .__width {
+      display: flex;
+      justify-content: space-between;
+
+      .description {
+        width: 510px;
+
+        p {
+          @include roboto-03($f_size: 24px, $l_height: 36px);
+          color: $american_silver;
+          font-weight: 500;
+        }
+
+        .components {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin: 28px 0 32px;
+
+          .info-utils {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+
+            span {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              font-weight: 600;
+              color: #999;
+              background: $black;
+              padding: 2px 8px;
+              @include list($f_size: 14px, $l_height: 22px);
+
+              &:nth-of-type(1) {
+                &::before {
+                  content: url("../../images/icones/entrega.svg");
+                  height: 15px;
+                }
+              }
+
+              &:nth-of-type(2) {
+                &::before {
+                  content: url("../../images/icones/estoque.svg");
+                  height: 15px;
+                }
+              }
+            }
+          }
+        }
+
+        .information {
+          width: 100%;
+
+          .legend {
+            @include legend-02($f_size: 28px, $l_height: 36px);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $white;
+            margin-bottom: 12px;
+          }
+
+          .box-info {
+            padding: 32px 10px;
+            background: $black;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 20px;
+            column-gap: 20px;
+            width: 100%;
+
+            .info {
+              width: 100%;
+              .legend {
+                @include legend-02($f_size: 18px, $l_height: 24px);
+                font-weight: 500;
+                margin-bottom: 12px;
+                display: flex;
+                flex-direction: column;
+
+                &::before {
+                  height: 32px;
+                }
+              }
+
+              p {
+                @include roboto-03($f_size: 16px, $l_height: 24px);
+                margin-top: 8px;
+              }
+
+              &:nth-of-type(1) {
+                .legend {
+                  &::before {
+                    content: url("../../images/icones/eletrica.svg");
+                  }
+                }
+              }
+
+              &:nth-of-type(2) {
+                .legend {
+                  &::before {
+                    content: url("../../images/icones/velocidade.svg");
+                  }
+                }
+              }
+
+              &:nth-of-type(3) {
+                .legend {
+                  &::before {
+                    content: url("../../images/icones/carbono.svg");
+                  }
+                }
+              }
+
+              &:nth-of-type(4) {
+                .legend {
+                  &::before {
+                    content: url("../../images/icones/rastreador.svg");
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .datasheet {
+          margin-top: 32px;
+          .legend {
+            @include legend-02($f_size: 28px, $l_height: 36px);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $white;
+            margin-bottom: 12px;
+          }
+
+          ul {
+            background: $black;
+            border-radius: 5px;
+            list-style: none;
+            width: 100%;
+            padding: 32px;
+
+            li {
+              display: flex;
+              justify-content: space-between;
+              border-bottom: 1px solid $charleston_green;
+              padding: 8px 0;
+              @include roboto-03($f_size: 20px, $l_height: 28px);
+              font-weight: 500;
+
+              &:first-child {
+                padding-top: 0;
+              }
+
+              &:last-child {
+                border: none;
+                padding-bottom: 0;
+              }
+              span {
+                &:nth-of-type(1) {
+                  color: $white;
+                }
+
+                &:nth-of-type(2) {
+                  color: $spanish_gray;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .see-too {
+    padding: 80px 0 140px;
+    .box-bike {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 40px;
+      .card {
+        width: 515px;
+
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
+
+        .info-bike {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          position: relative;
+          margin-top: 12px;
+          padding-left: 30px;
+
+          .legend {
+            @include poppins-01;
+            color: $black;
+            font-weight: 700;
+          }
+
+          .price {
+            @include roboto-02;
+            line-height: 20px;
+            color: $gray;
+            font-weight: 500;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 18px;
+            height: 8px;
+            background: $selective_yellow;
+          }
+        }
+      }
+    }
+  }
+
+  .insurance {
+    position: relative;
+
+    img {
+      position: absolute;
+      z-index: 1;
+      left: 5%;
+      transform: translateX(-5%);
+      bottom: 0;
+      width: 500px;
+      height: 600px;
+      border-radius: 5px;
+    }
+
+    .box-content {
+      background: $chinese_black;
+      padding: 32px;
+
+      .__width {
+        display: flex;
+        justify-content: flex-end;
+
+        .content {
+          width: 600px;
+
+          .titles-sec {
+            color: $white;
+          }
+
+          p {
+            @include roboto-03($f_size: 24px, $l_height: 32px);
+            font-weight: 500;
+            color: $american_silver;
+            margin-block: 20px;
+          }
+        }
+      }
+    }
+
+    .back-black {
+      height: 50px;
+      width: 100%;
+      background: $black;
+    }
+  }
+}
