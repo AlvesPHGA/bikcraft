@@ -316,6 +316,11 @@ a {
 
 .page-index .prod-bikes .bikes .card {
   width: 515px;
+  padding-bottom: 5px;
+}
+
+.page-index .prod-bikes .bikes .card:hover {
+  background: #f8f7f7;
 }
 
 .page-index .prod-bikes .bikes .card img {
@@ -1140,6 +1145,12 @@ a {
 
 .page-bike-intern .see-too .box-bike .card {
   width: 515px;
+  border-radius: 5px;
+  padding-bottom: 5px;
+}
+
+.page-bike-intern .see-too .box-bike .card:hover {
+  background: #f8f7f7;
 }
 
 .page-bike-intern .see-too .box-bike .card img {
@@ -1827,27 +1838,48 @@ a {
   z-index: -1;
 }
 
-.page-budget .option-budget .__width {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.page-budget .option-budget .__width .form-budget {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  width: 100%;
 }
 
-.page-budget .option-budget .__width .option-prod {
-  padding: 45px 40px;
+.page-budget .option-budget .__width .form-budget .products {
+  padding: 45px;
+  width: 100%;
   background: #000000;
   border-radius: 5px 0 0 5px;
   -webkit-box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.49);
           box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.49);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.page-budget .option-budget .__width .option-prod .legend {
+.page-budget .option-budget .__width .form-budget .products input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.page-budget .option-budget .__width .form-budget .products input[type="radio"]:checked + label::before {
+  border-color: #3d3d3d;
+  -webkit-box-shadow: inset 0 0 0 3px #ffffff, inset 0 0 0 6px #3d3d3d;
+          box-shadow: inset 0 0 0 3px #ffffff, inset 0 0 0 6px #3d3d3d;
+}
+
+.page-budget .option-budget .__width .form-budget .products .legend {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #c4c4c4;
   font-weight: 500;
+  color: #c4c4c4;
   text-transform: uppercase;
   letter-spacing: 2px;
   display: -webkit-box;
@@ -1859,7 +1891,7 @@ a {
   gap: 8px;
 }
 
-.page-budget .option-budget .__width .option-prod .legend::before {
+.page-budget .option-budget .__width .form-budget .products .legend::before {
   content: "";
   width: 15px;
   height: 5px;
@@ -1867,100 +1899,223 @@ a {
   border-radius: 5px;
 }
 
-.page-budget .option-budget .__width .option-prod a {
-  font-family: "Roboto Mono", monospace;
-  font-size: 18px;
-  line-height: 28px;
-  color: #9c9c9c;
-  font-weight: 500;
+.page-budget .option-budget .__width .form-budget .products label {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #3d3d3d;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #000000;
+}
+
+.page-budget .option-budget .__width .form-budget .products label::before {
+  content: "";
+  border: 1px solid #ffffff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-budget .option-budget .__width .form-budget .products label:hover {
+  background: #535353;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.page-budget .option-budget .__width .form-budget .products .select {
+  margin-top: 40px;
+}
+
+.page-budget .option-budget .__width .form-budget .products .select #bikcraft:checked + label,
+.page-budget .option-budget .__width .form-budget .products .select #insurance:checked + label {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffbb00;
+}
+
+.page-budget .option-budget .__width .form-budget .products .select #bikcraft:checked ~ .product .bikcraft,
+.page-budget .option-budget .__width .form-budget .products .select #insurance:checked ~ .product .insurance {
   display: block;
 }
 
-.page-budget .option-budget .__width .option-prod .street {
-  margin: 35px 0 20px;
-  width: 150px;
+.page-budget .option-budget .__width .form-budget .products .product {
+  margin-top: 60px;
+  display: block;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product label {
+  display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft,
+.page-budget .option-budget .__width .form-budget .products .product .insurance {
+  display: none;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft label {
+  width: 350px;
+  border-bottom: 0;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .legend {
+  margin-bottom: 20px;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike:nth-of-type(2) {
+  margin-block: 12px;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike span {
+  color: #ffffff;
+  text-align: right;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike label {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike label span {
+  display: none;
+  color: #3d3d3d;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike .content {
+  border: 1px solid #000000;
+  border-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8px;
-  position: relative;
-  margin-left: 30px;
-}
-
-.page-budget .option-budget .__width .option-prod .street::before {
-  content: url("../../images/icones/local.svg");
-  height: 32px;
-  margin-top: 2px;
-  position: absolute;
-  right: 160px;
-  top: 5px;
-}
-
-.page-budget .option-budget .__width .option-prod .email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 8px;
-  position: relative;
-  margin-left: 30px;
-}
-
-.page-budget .option-budget .__width .option-prod .email::before {
-  content: url("../../images/icones/email.svg");
-  height: 32px;
-  margin-top: 2px;
-  position: absolute;
-  right: 230px;
-  top: 5px;
-}
-
-.page-budget .option-budget .__width .option-prod .phone {
-  margin: 20px 0 24px;
-  position: relative;
-  margin-left: 30px;
-}
-
-.page-budget .option-budget .__width .option-prod .phone::before {
-  content: url("../../images/icones/telefone.svg");
-  height: 32px;
-  margin-top: 2px;
-  position: absolute;
-  right: 230px;
-  top: 3px;
-}
-
-.page-budget .option-budget .__width .option-prod .social-media {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
-.page-budget .option-budget .__width .form-budget {
-  padding: 45px 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #ffffff;
-  width: 700px;
+  width: 350px;
+  padding: 12px;
+  border-radius: 0 0 5px 5px;
+  display: none;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike .content ul {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike .content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike .content ul li:first-child {
+  margin-top: 0;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike .content ul li img {
+  width: 22px;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike .content ul li span {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike .content img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike #nimbus:checked + label,
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike #magic:checked + label,
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike #nebula:checked + label {
+  border-radius: 5px 5px 0 0;
+  background: #ffffff;
+  border: 1px solid #ffbb00;
+  border-bottom: 0;
+  color: #3d3d3d;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike #nimbus:checked + label span,
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike #magic:checked + label span,
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike #nebula:checked + label span {
+  display: block;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike #nimbus:checked + label + .content,
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike #magic:checked + label + .content,
+.page-budget .option-budget .__width .form-budget .products .product .bikcraft .bike #nebula:checked + label + .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ffbb00;
+  border-top: 0;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .insurance label {
+  width: 115px;
+  border: 1px solid #000000;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .insurance .legend {
+  margin-bottom: 20px;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .insurance .insu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.page-budget .option-budget .__width .form-budget .products .product .insurance .insu #silver:checked + label,
+.page-budget .option-budget .__width .form-budget .products .product .insurance .insu #gold:checked + label {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffbb00;
+}
+
+.page-budget .option-budget .__width .form-budget .data-user {
+  padding: 40px;
+  background: #ffffff;
   border-radius: 0 5px 5px 0;
   -webkit-box-shadow: 2px 5px 14px 0px rgba(0, 0, 0, 0.49);
           box-shadow: 2px 5px 14px 0px rgba(0, 0, 0, 0.49);
 }
 
-.page-budget .option-budget .__width .form-budget form {
-  width: 100%;
-}
-
-.page-budget .option-budget .__width .form-budget form label {
+.page-budget .option-budget .__width .form-budget .data-user label {
   font-family: "Roboto Mono", monospace;
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
 }
 
-.page-budget .option-budget .__width .form-budget form input {
+.page-budget .option-budget .__width .form-budget .data-user input {
   height: 50px;
   background: #d1d1d1;
   border-radius: 5px;
@@ -1972,7 +2127,7 @@ a {
   line-height: 24px;
 }
 
-.page-budget .option-budget .__width .form-budget form .data-person .fullname {
+.page-budget .option-budget .__width .form-budget .data-user .data-person .fullname {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1984,8 +2139,8 @@ a {
   margin-bottom: 20px;
 }
 
-.page-budget .option-budget .__width .form-budget form .data-person .fullname .name,
-.page-budget .option-budget .__width .form-budget form .data-person .fullname .last_name {
+.page-budget .option-budget .__width .form-budget .data-user .data-person .fullname .name,
+.page-budget .option-budget .__width .form-budget .data-user .data-person .fullname .last_name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1996,13 +2151,13 @@ a {
   gap: 8px;
 }
 
-.page-budget .option-budget .__width .form-budget form .data-person .fullname input {
+.page-budget .option-budget .__width .form-budget .data-user .data-person .fullname input {
   width: 300px;
 }
 
-.page-budget .option-budget .__width .form-budget form .data-person .email,
-.page-budget .option-budget .__width .form-budget form .data-person .cpf,
-.page-budget .option-budget .__width .form-budget form .data-person .message {
+.page-budget .option-budget .__width .form-budget .data-user .data-person .email,
+.page-budget .option-budget .__width .form-budget .data-user .data-person .cpf,
+.page-budget .option-budget .__width .form-budget .data-user .data-person .message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2013,20 +2168,20 @@ a {
   gap: 8px;
 }
 
-.page-budget .option-budget .__width .form-budget form .data-person .cpf {
+.page-budget .option-budget .__width .form-budget .data-user .data-person .cpf {
   margin-bottom: 20px;
 }
 
-.page-budget .option-budget .__width .form-budget form .data-delivery {
+.page-budget .option-budget .__width .form-budget .data-user .data-delivery {
   width: 100%;
   margin: 40px 0;
 }
 
-.page-budget .option-budget .__width .form-budget form .data-delivery input {
+.page-budget .option-budget .__width .form-budget .data-user .data-delivery input {
   width: 300px;
 }
 
-.page-budget .option-budget .__width .form-budget form .data-delivery .box {
+.page-budget .option-budget .__width .form-budget .data-user .data-delivery .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2036,11 +2191,11 @@ a {
   margin-top: 20px;
 }
 
-.page-budget .option-budget .__width .form-budget form .data-delivery .box:first-child {
+.page-budget .option-budget .__width .form-budget .data-user .data-delivery .box:first-child {
   margin-top: 0;
 }
 
-.page-budget .option-budget .__width .form-budget form .data-delivery .box .field {
+.page-budget .option-budget .__width .form-budget .data-user .data-delivery .box .field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2051,8 +2206,52 @@ a {
   gap: 8px;
 }
 
-.page-budget .option-budget .__width .form-budget form .btn {
+.page-budget .option-budget .__width .form-budget .data-user input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.page-budget .option-budget .__width .form-budget .data-user input[type="checkbox"]:checked + label::before {
+  border-radius: 5px;
+  background: #3d3d3d;
+  border: 2px solid #ffbb00;
+}
+
+.page-budget .option-budget .__width .form-budget .data-user .term {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.page-budget .option-budget .__width .form-budget .data-user .term a {
+  color: #ffbb00;
+  font-weight: 700;
+}
+
+.page-budget .option-budget .__width .form-budget .data-user .term a:hover {
+  text-decoration: underline;
+}
+
+.page-budget .option-budget .__width .form-budget .data-user .term::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+
+.page-budget .option-budget .__width .form-budget .data-user .btn {
   background: #ca9700;
+  margin-top: 40px;
 }
 
 .page-terms-condition article {

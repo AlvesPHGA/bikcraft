@@ -43,19 +43,140 @@
         <section class="option-budget">
             <div class="back-black"></div>
             <section class="__width">
-                <section class="option-prod">
-                    <div class="select-prod">
-                        <h2 class="legend">bikcraft ou seguro</h2>
-                    </div>
-
+                <form class="form-budget" action="./">
                     <div class="products">
-                        <h2 class="legend">Escolha a sua</h2>
+                        <div class="select-prod">
+                            <h2 class="legend">bikcraft ou seguro</h2>
+
+                            <div class="select">
+
+                                <input type="radio" name="tipo" id="bikcraft">
+                                <label for="bikcraft">Bikcraft</label>
+
+                                <input type="radio" name="tipo" id="insurance">
+                                <label for="insurance">Seguro</label>
+
+                                <div class="product">
+                                    <div class="bikcraft">
+                                        <h2 class="legend">Escolha a sua Bikcraft</h2>
+
+                                        <div class="bike">
+                                            <input type="radio" name="bike" id="nimbus">
+                                            <label for="nimbus">Nimbus Stark <span>R$ 2999</span></label>
+
+                                            <div class="content">
+                                                <ul>
+                                                    <li>
+                                                        <img src="images/icones/eletrica.svg" alt="">
+                                                        <span>Eletrico</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/icones/carbono.svg" alt="">
+                                                        <span>Fibra de Carbono</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/icones/velocidade.svg" alt="">
+                                                        <span>40 km/h</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/icones/rastreador.svg" alt="">
+                                                        <span>Rastreador</span>
+                                                    </li>
+                                                </ul>
+
+                                                <img src="images/bicicleta/nimbus1.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="bike">
+                                            <input type="radio" name="bike" id="magic">
+                                            <label for="magic">Magic Migh</label>
+
+                                            <div class="content">
+                                                <ul>
+                                                    <li>
+                                                        <img src="images/icones/eletrica.svg" alt="">
+                                                        <span>Eletrico</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/icones/carbono.svg" alt="">
+                                                        <span>Fibra de Carbono</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/icones/velocidade.svg" alt="">
+                                                        <span>40 km/h</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/icones/rastreador.svg" alt="">
+                                                        <span>Rastreador</span>
+                                                    </li>
+                                                </ul>
+
+                                                <img src="images/bicicleta/nimbus2.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="bike">
+                                            <input type="radio" name="bike" id="nebula">
+                                            <label for="nebula">Nebula Cosmic</label>
+
+                                            <div class="content">
+                                                <ul>
+                                                    <li>
+                                                        <img src="images/icones/eletrica.svg" alt="">
+                                                        <span>Eletrico</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/icones/carbono.svg" alt="">
+                                                        <span>Fibra de Carbono</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/icones/velocidade.svg" alt="">
+                                                        <span>40 km/h</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/icones/rastreador.svg" alt="">
+                                                        <span>Rastreador</span>
+                                                    </li>
+                                                </ul>
+
+                                                <img src="images/bicicleta/nimbus3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="insurance">
+                                        <h2 class="legend">Escolha o seu Seguro</h2>
+
+                                        <div class="insu">
+                                            <input type="radio" name="insurance" id="silver">
+                                            <label for="silver">Prata</label>
+                                        </div>
+
+                                        <div class="insu">
+                                            <input type="radio" name="insurance" id="gold">
+                                            <label for="gold">Ouro</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="product">
+                            <div class="bikcraft">
+                                <h2 class="legend">Bikcraft</h2>
+                            </div>
+                            <div class="insurance">
+                                <h2 class="legend">Seguro</h2>
+                            </div>
+                        </div>
+
                     </div>
 
-                </section>
-
-                <section class="form-budget">
-                    <form>
+                    <div class="data-user">
                         <div class="data-person">
                             <div class="fullname">
                                 <div class="name">
@@ -118,9 +239,13 @@
                             </div>
                         </div>
 
+                        <input type="checkbox" name="term" id="term">
+                        <label for="term" class="term">Li e aceito os <a href="terms-conditions.html">termos e condições</a>.</label>
+
                         <button class="btn">Enviar dados</button>
-                    </form>
-                </section>
+
+                    </div>
+                </form>
             </section>
         </section>
 

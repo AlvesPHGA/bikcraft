@@ -15,105 +15,241 @@
     }
 
     .__width {
-      display: flex;
+      .form-budget {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        width: 100%;
 
-      .option-prod {
-        padding: 45px 40px;
-        background: $black;
-        border-radius: 5px 0 0 5px;
-        box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.49);
-
-        .legend {
-          @include legend-02($f_size: 18px, $l_height: 24px);
-          color: $silver_sand;
-          font-weight: 500;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-
-          &::before {
-            content: "";
-            width: 15px;
-            height: 5px;
-            background: $selective_yellow;
-            border-radius: 5px;
-          }
-        }
-
-        a {
-          @include roboto-03($f_size: 18px, $l_height: 28px);
-          color: $spanish_gray;
-          font-weight: 500;
-          display: block;
-        }
-
-        .street {
-          margin: 35px 0 20px;
-          width: 150px;
-          display: flex;
-          gap: 8px;
-          position: relative;
-          margin-left: 30px;
-
-          &::before {
-            content: url("../../images/icones/local.svg");
-            height: 32px;
-            margin-top: 2px;
-            position: absolute;
-            right: 160px;
-            top: 5px;
-          }
-        }
-
-        .email {
+        .products {
+          padding: 45px;
+          width: 100%;
+          background: $black;
+          border-radius: 5px 0 0 5px;
+          box-shadow: -2px 5px 14px 0px rgba(0, 0, 0, 0.49);
           display: flex;
           flex-direction: column;
-          gap: 8px;
-          position: relative;
-          margin-left: 30px;
 
-          &::before {
-            content: url("../../images/icones/email.svg");
-            height: 32px;
-            margin-top: 2px;
+          input[type="radio"] {
+            opacity: 0;
             position: absolute;
-            right: 230px;
-            top: 5px;
+            pointer-events: none;
+
+            &:checked + label::before {
+              border-color: #3d3d3d;
+              box-shadow: inset 0 0 0 3px $white, inset 0 0 0 6px #3d3d3d;
+            }
+          }
+
+          .legend {
+            @include title(
+              $f_size: 18px,
+              $l_height: 24px,
+              $f_weight: 500,
+              $color: $silver_sand
+            );
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            &::before {
+              content: "";
+              width: 15px;
+              height: 5px;
+              background: $selective_yellow;
+              border-radius: 5px;
+            }
+          }
+
+          label {
+            @include title(
+              $f_size: 16px,
+              $l_height: 24px,
+              $f_weight: 600,
+              $color: $white
+            );
+            background: #3d3d3d;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid $black;
+
+            &::before {
+              content: "";
+              border: 1px solid $white;
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              margin-right: 8px;
+              display: inline-block;
+              box-sizing: border-box;
+            }
+
+            &:hover {
+              background: #535353;
+              transition: 0.7s ease;
+            }
+          }
+
+          .select {
+            margin-top: 40px;
+
+            #bikcraft:checked + label,
+            #insurance:checked + label {
+              background: $white;
+              color: $black;
+              border: 1px solid $selective_yellow;
+            }
+
+            #bikcraft:checked ~ .product .bikcraft,
+            #insurance:checked ~ .product .insurance {
+              display: block;
+            }
+          }
+
+          .product {
+            margin-top: 60px;
+            display: block;
+
+            label {
+              display: block;
+              height: fit-content;
+            }
+            .bikcraft,
+            .insurance {
+              display: none;
+            }
+
+            .bikcraft {
+              label {
+                width: 350px;
+                border-bottom: 0;
+              }
+              .legend {
+                margin-bottom: 20px;
+              }
+
+              .bike {
+                &:nth-of-type(2) {
+                  margin-block: 12px;
+                }
+
+                span {
+                  color: $white;
+                  text-align: right;
+                }
+
+                label {
+                  display: grid;
+                  grid-template-columns: auto 1fr auto;
+                  align-items: center;
+                  span {
+                    display: none;
+                    color: #3d3d3d;
+                  }
+                }
+
+                .content {
+                  border: 1px solid $black;
+                  border-top: 0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  background: $white;
+                  width: 350px;
+                  padding: 12px;
+                  border-radius: 0 0 5px 5px;
+                  display: none;
+
+                  ul {
+                    list-style: none;
+                    padding-left: 30px;
+
+                    li {
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      margin-top: 8px;
+
+                      &:first-child {
+                        margin-top: 0;
+                      }
+
+                      img {
+                        width: 22px;
+                      }
+
+                      span {
+                        @include title(
+                          $f_size: 14px,
+                          $l_height: 20px,
+                          $f_weight: 500,
+                          $color: $black
+                        );
+                      }
+                    }
+                  }
+
+                  img {
+                    width: 100px;
+                    border-radius: 5px;
+                  }
+                }
+
+                #nimbus:checked + label,
+                #magic:checked + label,
+                #nebula:checked + label {
+                  border-radius: 5px 5px 0 0;
+                  background: $white;
+                  border: 1px solid $selective_yellow;
+                  border-bottom: 0;
+                  color: #3d3d3d;
+
+                  span {
+                    display: block;
+                  }
+                }
+
+                #nimbus:checked + label + .content,
+                #magic:checked + label + .content,
+                #nebula:checked + label + .content {
+                  display: flex;
+                  border: 1px solid $selective_yellow;
+                  border-top: 0;
+                }
+              }
+            }
+
+            .insurance {
+              label {
+                width: 115px;
+                border: 1px solid $black;
+              }
+
+              .legend {
+                margin-bottom: 20px;
+              }
+
+              .insu {
+                display: inline-flex;
+
+                #silver:checked + label,
+                #gold:checked + label {
+                  background: $white;
+                  color: $black;
+                  border-color: $selective_yellow;
+                }
+              }
+            }
           }
         }
 
-        .phone {
-          margin: 20px 0 24px;
-          position: relative;
-          margin-left: 30px;
-
-          &::before {
-            content: url("../../images/icones/telefone.svg");
-            height: 32px;
-            margin-top: 2px;
-            position: absolute;
-            right: 230px;
-            top: 3px;
-          }
-        }
-
-        .social-media {
-          display: flex;
-          gap: 30px;
-        }
-      }
-
-      .form-budget {
-        padding: 45px 40px;
-        background: $white;
-        width: 700px;
-        border-radius: 0 5px 5px 0;
-        box-shadow: 2px 5px 14px 0px rgba(0, 0, 0, 0.49);
-
-        form {
-          width: 100%;
+        .data-user {
+          padding: 40px;
+          background: $white;
+          border-radius: 0 5px 5px 0;
+          box-shadow: 2px 5px 14px 0px rgba(0, 0, 0, 0.49);
 
           label {
             @include roboto-03($f_size: 18px, $l_height: 28px);
@@ -186,8 +322,58 @@
             }
           }
 
+          input[type="checkbox"] {
+            opacity: 0;
+            position: absolute;
+            pointer-events: none;
+
+            &:checked + label::before {
+              border-radius: 5px;
+              background: #3d3d3d;
+              border: 2px solid $selective_yellow;
+            }
+          }
+
+          .term {
+            @include text(
+              $f_size: 18px,
+              $l_height: 28px,
+              $f_weight: 500,
+              $color: $black
+            );
+
+            a {
+              color: $selective_yellow;
+              font-weight: 700;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+
+            &::before {
+              content: "";
+              width: 24px;
+              height: 24px;
+              box-sizing: border-box;
+              border-radius: 5px;
+              border: 1px solid $black;
+              display: inline-block;
+              position: relative;
+              top: 5px;
+              margin-right: 5px;
+            }
+          }
+
+          // #term:checked + label {
+          //   &::before {
+          //     background: $black;
+          //   }
+          // // }
+
           .btn {
             background: $chinese_gold;
+            margin-top: 40px;
           }
         }
       }
