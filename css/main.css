@@ -1026,8 +1026,20 @@ a {
   padding: 80px 0;
 }
 
+@media (max-width: 320px) {
+  .page-index .insurance {
+    padding: 40px 0;
+  }
+}
+
 .page-index .insurance .titles-sec {
   color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .page-index .insurance .titles-sec {
+    text-align: center;
+  }
 }
 
 .page-index .insurance .content {
@@ -1043,12 +1055,14 @@ a {
           justify-content: space-between;
 }
 
-.page-index .insurance .content .legend {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
+@media (max-width: 320px) {
+  .page-index .insurance .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .page-index .insurance .content .silver,
@@ -1058,12 +1072,30 @@ a {
   border-radius: 5px;
 }
 
+@media (max-width: 320px) {
+  .page-index .insurance .content .silver,
+  .page-index .insurance .content .gold {
+    padding: 20px;
+    width: 100%;
+  }
+}
+
 .page-index .insurance .content .silver .header-ins,
 .page-index .insurance .content .gold .header-ins {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 260px;
+}
+
+@media (max-width: 320px) {
+  .page-index .insurance .content .silver .header-ins,
+  .page-index .insurance .content .gold .header-ins {
+    gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .page-index .insurance .content .silver .header-ins .box-price,
@@ -1081,10 +1113,21 @@ a {
 .page-index .insurance .content .silver .header-ins .box-price .price,
 .page-index .insurance .content .gold .header-ins .box-price .price {
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  font-weight: 500;
   font-size: 32px;
   line-height: 40px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .page-index .insurance .content .silver .header-ins .box-price .price,
+  .page-index .insurance .content .gold .header-ins .box-price .price {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #ffffff;
+  }
 }
 
 .page-index .insurance .content .silver .header-ins .box-price .month,
@@ -1092,8 +1135,19 @@ a {
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   line-height: 20px;
-  color: #696969;
   font-weight: 500;
+  color: #696969;
+}
+
+@media (max-width: 320px) {
+  .page-index .insurance .content .silver .header-ins .box-price .month,
+  .page-index .insurance .content .gold .header-ins .box-price .month {
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #696969;
+  }
 }
 
 .page-index .insurance .content .silver ul,
@@ -1112,12 +1166,19 @@ a {
 
 .page-index .insurance .content .silver ul li,
 .page-index .insurance .content .gold ul li {
-  color: #ffffff;
-  font-weight: 500;
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   line-height: 28px;
-  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .page-index .insurance .content .silver ul li,
+  .page-index .insurance .content .gold ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .page-index .insurance .content .silver ul li::before,
@@ -1128,7 +1189,19 @@ a {
 }
 
 .page-index .insurance .content .silver .legend {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
   color: #808080;
+  text-transform: uppercase;
+}
+
+@media (max-width: 320px) {
+  .page-index .insurance .content .silver .legend {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .page-index .insurance .content .silver .btn {
@@ -1137,13 +1210,37 @@ a {
   margin-left: 20px;
 }
 
+@media (max-width: 320px) {
+  .page-index .insurance .content .silver .btn {
+    margin: 0 auto;
+  }
+}
+
 .page-index .insurance .content .gold .legend {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
   color: #ca9700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 320px) {
+  .page-index .insurance .content .gold .legend {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .page-index .insurance .content .gold .btn {
   background: #ca9700;
   margin-left: 20px;
+}
+
+@media (max-width: 320px) {
+  .page-index .insurance .content .gold .btn {
+    margin: 0 auto;
+  }
 }
 
 .page-bikes .bikes {

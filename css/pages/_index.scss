@@ -507,8 +507,16 @@
     background: $chinese_black;
     padding: 80px 0;
 
+    @include mobile_s {
+      padding: 40px 0;
+    }
+
     .titles-sec {
       color: $white;
+
+      @include mobile_s {
+        text-align: center;
+      }
     }
 
     .content {
@@ -517,8 +525,9 @@
       margin-top: 20px;
       justify-content: space-between;
 
-      .legend {
-        @include legend;
+      @include mobile_s {
+        flex-direction: column;
+        gap: 20px;
       }
 
       .silver,
@@ -527,9 +536,19 @@
         background: $black;
         border-radius: 5px;
 
+        @include mobile_s {
+          padding: 20px;
+          width: 100%;
+        }
+
         .header-ins {
           display: flex;
           gap: 260px;
+
+          @include mobile_s {
+            gap: 0;
+            justify-content: space-between;
+          }
 
           .box-price {
             display: flex;
@@ -537,19 +556,39 @@
             text-align: right;
 
             .price {
-              @include font-poppins;
-              color: $white;
-              font-weight: 500;
-              font-size: 32px;
-              line-height: 40px;
+              @include title(
+                $f_size: 32px,
+                $l_height: 40px,
+                $f_weight: 500,
+                $color: $white
+              );
+
+              @include mobile_s {
+                @include title(
+                  $f_size: 20px,
+                  $l_height: 28px,
+                  $f_weight: 500,
+                  $color: $white
+                );
+              }
             }
 
             .month {
-              @include font-roboto;
-              font-size: 16px;
-              line-height: 20px;
-              color: $dim_gray;
-              font-weight: 500;
+              @include text(
+                $f_size: 16px,
+                $l_height: 20px,
+                $f_weight: 500,
+                $color: $dim_gray
+              );
+
+              @include mobile_s {
+                @include text(
+                  $f_size: 14px,
+                  $l_height: 18px,
+                  $f_weight: 500,
+                  $color: $dim_gray
+                );
+              }
             }
           }
         }
@@ -562,10 +601,16 @@
           margin-block: 20px;
 
           li {
-            color: $white;
-            font-weight: 500;
-            @include roboto-01;
-            font-size: 18px;
+            @include text(
+              $f_size: 20px,
+              $l_height: 28px,
+              $f_weight: 500,
+              $color: $white
+            );
+            @include mobile_s {
+              font-size: 16px;
+              line-height: 24px;
+            }
 
             &::before {
               position: relative;
@@ -578,24 +623,54 @@
 
       .silver {
         .legend {
-          color: $gray;
+          @include title(
+            $f_size: 32px,
+            $l_height: 44px,
+            $f_weight: 600,
+            $color: $gray
+          );
+          text-transform: uppercase;
+
+          @include mobile_s {
+            font-size: 20px;
+            line-height: 28px;
+          }
         }
 
         .btn {
           background: $charleston_green;
           color: $white;
           margin-left: 20px;
+
+          @include mobile_s {
+            margin: 0 auto;
+          }
         }
       }
 
       .gold {
         .legend {
-          color: $chinese_gold;
+          @include title(
+            $f_size: 32px,
+            $l_height: 44px,
+            $f_weight: 600,
+            $color: $chinese_gold
+          );
+          text-transform: uppercase;
+
+          @include mobile_s {
+            font-size: 20px;
+            line-height: 28px;
+          }
         }
 
         .btn {
           background: $chinese_gold;
           margin-left: 20px;
+
+          @include mobile_s {
+            margin: 0 auto;
+          }
         }
       }
     }
