@@ -161,6 +161,15 @@
         $color: $gray
       );
       text-transform: uppercase;
+
+      @include mobile_s {
+        @include text(
+          $f_size: 16px,
+          $l_height: 24px,
+          $f_weight: 500,
+          $color: $gray
+        );
+      }
     }
 
     .titles-sec {
@@ -171,8 +180,17 @@
       display: flex;
       justify-content: space-between;
 
+      @include mobile_s {
+        flex-direction: column;
+      }
+
       .description {
         width: 600px;
+
+        @include mobile_s {
+          width: 100%;
+          text-align: center;
+        }
 
         p {
           @include text(
@@ -184,6 +202,18 @@
 
           margin: 44px 0 20px;
           width: 550px;
+
+          @include mobile_s {
+            @include text(
+              $f_size: 16px,
+              $l_height: 24px,
+              $f_weight: 500,
+              $color: $white
+            );
+
+            margin: 20px 0;
+            width: 100%;
+          }
         }
 
         a {
@@ -217,10 +247,24 @@
         width: 400px;
         margin-top: 50px;
 
+        @include mobile_s {
+          width: 100%;
+          text-align: center;
+        }
+
         span {
           text-transform: uppercase;
           font-weight: 700;
           @include poppins-02;
+
+          @include mobile_s {
+            @include title(
+              $f_size: 20px,
+              $l_height: 28px,
+              $f_weight: 700,
+              $color: $white
+            );
+          }
         }
 
         p {
@@ -240,10 +284,25 @@
               position: absolute;
               right: 220px;
               top: 0;
+
+              @include mobile_s {
+                position: static;
+              }
+            }
+
+            @include mobile_s {
+              position: static;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
             }
           }
           p {
             margin: 16px 0 32px;
+
+            @include mobile_s {
+              margin: 10px 0 25px;
+            }
           }
         }
 
@@ -255,10 +314,25 @@
               position: absolute;
               right: 175px;
               top: 0;
+
+              @include mobile_s {
+                position: static;
+              }
+            }
+
+            @include mobile_s {
+              position: static;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
             }
           }
           p {
             margin-top: 16px;
+
+            @include mobile_s {
+              margin-top: 10px;
+            }
           }
         }
       }
@@ -268,8 +342,17 @@
   .partness {
     padding: 80px 0;
 
+    @include mobile_s {
+      padding: 20px 0;
+    }
+
     .titles-sec {
       margin-bottom: 44px;
+
+      @include mobile_s {
+        text-align: center;
+        margin-bottom: 20px;
+      }
     }
 
     ul {
@@ -277,10 +360,20 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
 
+      @include mobile_s {
+        display: flex;
+        flex-direction: column;
+      }
+
       li {
         display: flex;
         border-left: 1px solid $silver_sand;
         padding: 20px 0;
+
+        @include mobile_s {
+          border-left: 0;
+          border-bottom: 1px solid $silver_sand;
+        }
 
         &:nth-child(1),
         &:nth-child(5) {
@@ -289,6 +382,23 @@
 
         &:nth-child(n + 5) {
           border-top: 1px solid $silver_sand;
+
+          @include mobile_s {
+            border-top: 0;
+            border-bottom: 1px solid $silver_sand;
+          }
+        }
+
+        &:nth-child(1) {
+          @include mobile_s {
+            border-bottom: 1px solid $silver_sand;
+          }
+        }
+
+        &:last-child {
+          @include mobile_s {
+            border-bottom: 0;
+          }
         }
 
         img {
@@ -304,11 +414,25 @@
     align-items: center;
     justify-content: space-between;
 
+    @include mobile_s {
+      flex-direction: column;
+      padding-bottom: 30px;
+    }
+
     .box-img {
       height: 70vh;
 
+      @include mobile_s {
+        height: 40vh;
+        padding: 5px 5px 0 5px;
+      }
+
       img {
         height: 100%;
+
+        @include mobile_s {
+          border-radius: 5px;
+        }
       }
     }
 
@@ -321,6 +445,12 @@
     .box-comment {
       width: 630px;
 
+      @include mobile_s {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+      }
+
       p {
         font-size: 32px;
         line-height: 44px;
@@ -328,11 +458,21 @@
         font-family: "Libre Baskerville", serif;
         position: relative;
 
+        @include mobile_s {
+          font-size: 24px;
+          line-height: 32px;
+        }
+
         &::before {
           content: url("../../images/dooble_quote_left.svg");
           position: absolute;
           bottom: 150px;
           right: 630px;
+
+          @include mobile_s {
+            bottom: 200px;
+            left: 0;
+          }
         }
 
         &::after {
@@ -340,13 +480,25 @@
           position: absolute;
           bottom: 10px;
           right: 390px;
+
+          @include mobile_s {
+            right: 0;
+            bottom: 0;
+          }
         }
       }
 
       span {
-        font-weight: 700;
-        color: $gray;
-        @include roboto-01;
+        @include text(
+          $f_size: 20px,
+          $l_height: 28px,
+          $f_weight: 700,
+          $color: $gray
+        );
+
+        @include mobile_s {
+          margin-top: 20px;
+        }
       }
     }
   }
