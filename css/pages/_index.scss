@@ -3,6 +3,11 @@
     background: $black;
     padding: 80px 0;
 
+    @include mobile_s {
+      padding: 20px 0 40px;
+      text-align: center;
+    }
+
     h1 {
       @include title-h1;
       color: $white;
@@ -19,6 +24,15 @@
         $f_weight: 500,
         $color: $american_silver
       );
+
+      @include mobile_s {
+        @include text(
+          $f_size: 16px,
+          $l_height: 24px,
+          $f_weight: 500,
+          $color: $american_silver
+        );
+      }
     }
 
     .__width {
@@ -28,9 +42,18 @@
       .content {
         width: 600px;
 
+        @include mobile_s {
+          white-space: 100%;
+        }
+
         p {
           width: 530px;
           margin: 28px 0 40px;
+
+          @include mobile_s {
+            width: 100%;
+            margin: 16px 0 20px;
+          }
         }
       }
 
@@ -41,6 +64,18 @@
         top: -80px;
         right: 0;
         border-radius: 5px;
+
+        @include mobile_s {
+          width: 90%;
+          height: auto;
+          display: none;
+        }
+      }
+    }
+
+    .btn {
+      @include mobile_s {
+        margin: 0 auto;
       }
     }
   }
@@ -48,6 +83,10 @@
   .prod-bikes {
     width: 100%;
     padding: 140px 5% 80px;
+
+    @include mobile_s {
+      padding: 20px 0;
+    }
 
     h2 {
       span {

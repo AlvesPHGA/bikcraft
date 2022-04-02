@@ -7,3 +7,9 @@
 a {
   text-decoration: none;
 }
+
+img {
+  @include mobile_s {
+    width: 100%;
+  }
+}

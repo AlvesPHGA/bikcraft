@@ -1,16 +1,16 @@
-@mixin mobile-s {
+@mixin mobile_s {
   @media (max-width: 320px) {
     @content;
   }
 }
 
-@mixin mobile-m {
+@mixin mobile_m {
   @media (min-width: 321px) and (max-width: 375px) {
     @content;
   }
 }
 
-@mixin mobile-l {
+@mixin mobile_l {
   @media (min-width: 376px) and (max-width: 425px) {
     @content;
   }

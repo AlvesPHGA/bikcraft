@@ -11,6 +11,12 @@
   font-size: 68px;
   line-height: 76px;
   font-weight: 700;
+
+  @include mobile_s {
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+  }
 }
 
 @mixin title($f_size, $l_height, $f_weight, $color) {

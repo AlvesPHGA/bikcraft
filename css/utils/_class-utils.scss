@@ -4,6 +4,11 @@
   font-size: 64px;
   line-height: 76px;
 
+  @include mobile_s {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
   span {
     color: $selective_yellow;
   }
@@ -13,4 +18,9 @@
   width: 1200px;
   margin: 0 auto;
   position: relative;
+
+  @include mobile_s {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
