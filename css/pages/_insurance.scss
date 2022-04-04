@@ -1,7 +1,16 @@
 .page-insurance {
+  .titles-sec {
+    @include mobile_s {
+      text-align: center;
+    }
+  }
   .sec-insure {
     background: $chinese_black;
     padding-bottom: 80px;
+
+    @include mobile_s {
+      padding: 40px 0;
+    }
 
     .titles-sec {
       color: $white;
@@ -12,8 +21,8 @@
       align-items: center;
       justify-content: space-between;
 
-      .legend {
-        @include legend;
+      @include mobile_s {
+        flex-direction: column;
       }
 
       .silver,
@@ -22,9 +31,19 @@
         background: $black;
         border-radius: 5px;
 
+        @include mobile_s {
+          padding: 20px;
+          width: 100%;
+        }
+
         .header-ins {
           display: flex;
           gap: 260px;
+
+          @include mobile_s {
+            gap: 0;
+            justify-content: space-between;
+          }
 
           .box-price {
             display: flex;
@@ -32,11 +51,17 @@
             text-align: right;
 
             .price {
-              @include font-poppins;
-              color: $white;
-              font-weight: 500;
-              font-size: 32px;
-              line-height: 40px;
+              @include title(
+                $f_size: 32px,
+                $l_height: 40px,
+                $f_weight: 500,
+                $color: $white
+              );
+
+              @include mobile_s {
+                font-size: 20px;
+                line-height: 28px;
+              }
             }
 
             .month {
@@ -46,6 +71,11 @@
                 $f_weight: 500,
                 $color: $dim_gray
               );
+
+              @include mobile_s {
+                font-size: 14px;
+                line-height: 18px;
+              }
             }
           }
         }
@@ -65,6 +95,11 @@
               $color: $white
             );
 
+            @include mobile_s {
+              font-size: 16px;
+              line-height: 24px;
+            }
+
             &::before {
               position: relative;
               content: url("../../images/icones/lista.svg");
@@ -76,24 +111,58 @@
 
       .silver {
         .legend {
-          color: $gray;
+          @include title(
+            $f_size: 32px,
+            $l_height: 44px,
+            $f_weight: 600,
+            $color: $gray
+          );
+          text-transform: uppercase;
+
+          @include mobile_s {
+            font-size: 20px;
+            line-height: 28px;
+          }
         }
 
         .btn {
           background: $charleston_green;
           color: $white;
           margin-left: 20px;
+
+          @include mobile_s {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+          }
         }
       }
 
       .gold {
         .legend {
-          color: $chinese_gold;
+          @include title(
+            $f_size: 32px,
+            $l_height: 44px,
+            $f_weight: 600,
+            $color: $chinese_gold
+          );
+          text-transform: uppercase;
+
+          @include mobile_s {
+            font-size: 20px;
+            line-height: 28px;
+          }
         }
 
         .btn {
           background: $chinese_gold;
           margin-left: 20px;
+
+          @include mobile_s {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+          }
         }
       }
     }
@@ -104,6 +173,10 @@
     padding: 80px 0;
     color: $white;
 
+    @include mobile_s {
+      padding: 40px 0;
+    }
+
     .box-benefits {
       margin-top: 40px;
       display: grid;
@@ -111,18 +184,47 @@
       justify-content: space-between;
       gap: 40px;
 
+      @include mobile_s {
+        display: flex;
+        flex-direction: column;
+      }
+
       .benefit {
         width: 320px;
+
+        @include mobile_s {
+          width: 100%;
+        }
 
         .legend {
           display: flex;
           flex-direction: column;
           margin: 4px 0 8px;
-          @include legend-02($f_size: 28px, $l_height: 36px);
+          @include title(
+            $f_size: 28px,
+            $l_height: 36px,
+            $f_weight: 700,
+            $color: $white
+          );
+
+          @include mobile_s {
+            font-size: 20px;
+            line-height: 32px;
+          }
         }
 
         p {
-          @include roboto-03($f_size: 18px, $l_height: 28px);
+          @include text(
+            $f_size: 18px,
+            $l_height: 28px,
+            $f_weight: 500,
+            $color: $white
+          );
+
+          @include mobile_s {
+            font-size: 18px;
+            line-height: 28px;
+          }
         }
 
         &:nth-of-type(1) {
@@ -184,11 +286,24 @@
 
   .questions {
     padding: 80px 0;
+
+    @include mobile_s {
+      padding: 40px 0;
+    }
+
     .box-questions {
       margin-top: 40px;
 
+      @include mobile_s {
+        margin-top: 20px 0;
+      }
+
       .question {
         padding: 20px;
+
+        @include mobile_s {
+          padding: 10px;
+        }
 
         &:nth-child(odd) {
           background: #ebebeb;
@@ -200,22 +315,40 @@
           justify-content: space-between;
 
           h3 {
-            @include roboto-03($f_size: 28px, $l_height: 52px);
-            font-weight: 600;
             display: flex;
             align-items: center;
             gap: 8px;
+            @include text(
+              $f_size: 28px,
+              $l_height: 52px,
+              $f_weight: 600,
+              $color: $black
+            );
+
+            @include mobile_s {
+              font-size: 18px;
+              line-height: 28px;
+              position: relative;
+            }
 
             &::before {
               content: "";
               width: 20px;
               height: 10px;
               background: $selective_yellow;
+
+              @include mobile_s {
+                display: none;
+              }
             }
           }
 
           img {
             transform: rotate(180deg);
+
+            @include mobile_s {
+              width: 20px;
+            }
           }
         }
       }

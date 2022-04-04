@@ -69,18 +69,40 @@ a {
   padding: 60px 0;
 }
 
+@media (max-width: 320px) {
+  .subheader {
+    text-align: center;
+    padding: 30px 0;
+  }
+}
+
 .subheader .legend {
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   line-height: 28px;
+  font-weight: 500;
   color: #808080;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+}
+
+@media (max-width: 320px) {
+  .subheader .legend {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .subheader .titles-sec {
   color: #ffffff;
   margin-top: 12px;
+}
+
+@media (max-width: 320px) {
+  .subheader .titles-sec {
+    margin-top: 8px;
+  }
 }
 
 .subheader .titles-sec span {
@@ -1875,9 +1897,21 @@ a {
   background: #000000;
 }
 
+@media (max-width: 320px) {
+  .page-insurance .titles-sec {
+    text-align: center;
+  }
+}
+
 .page-insurance .sec-insure {
   background: #121212;
   padding-bottom: 80px;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .sec-insure {
+    padding: 40px 0;
+  }
 }
 
 .page-insurance .sec-insure .titles-sec {
@@ -1896,12 +1930,13 @@ a {
           justify-content: space-between;
 }
 
-.page-insurance .sec-insure .content .legend {
-  font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
+@media (max-width: 320px) {
+  .page-insurance .sec-insure .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .page-insurance .sec-insure .content .silver,
@@ -1911,12 +1946,30 @@ a {
   border-radius: 5px;
 }
 
+@media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver,
+  .page-insurance .sec-insure .content .gold {
+    padding: 20px;
+    width: 100%;
+  }
+}
+
 .page-insurance .sec-insure .content .silver .header-ins,
 .page-insurance .sec-insure .content .gold .header-ins {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 260px;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver .header-ins,
+  .page-insurance .sec-insure .content .gold .header-ins {
+    gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .page-insurance .sec-insure .content .silver .header-ins .box-price,
@@ -1934,10 +1987,18 @@ a {
 .page-insurance .sec-insure .content .silver .header-ins .box-price .price,
 .page-insurance .sec-insure .content .gold .header-ins .box-price .price {
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  font-weight: 500;
   font-size: 32px;
   line-height: 40px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver .header-ins .box-price .price,
+  .page-insurance .sec-insure .content .gold .header-ins .box-price .price {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .page-insurance .sec-insure .content .silver .header-ins .box-price .month,
@@ -1947,6 +2008,14 @@ a {
   line-height: 20px;
   font-weight: 500;
   color: #696969;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver .header-ins .box-price .month,
+  .page-insurance .sec-insure .content .gold .header-ins .box-price .month {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .page-insurance .sec-insure .content .silver ul,
@@ -1972,6 +2041,14 @@ a {
   color: #ffffff;
 }
 
+@media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver ul li,
+  .page-insurance .sec-insure .content .gold ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .page-insurance .sec-insure .content .silver ul li::before,
 .page-insurance .sec-insure .content .gold ul li::before {
   position: relative;
@@ -1980,7 +2057,19 @@ a {
 }
 
 .page-insurance .sec-insure .content .silver .legend {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
   color: #808080;
+  text-transform: uppercase;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver .legend {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .page-insurance .sec-insure .content .silver .btn {
@@ -1989,8 +2078,28 @@ a {
   margin-left: 20px;
 }
 
+@media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver .btn {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+}
+
 .page-insurance .sec-insure .content .gold .legend {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
   color: #ca9700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .sec-insure .content .gold .legend {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .page-insurance .sec-insure .content .gold .btn {
@@ -1998,10 +2107,24 @@ a {
   margin-left: 20px;
 }
 
+@media (max-width: 320px) {
+  .page-insurance .sec-insure .content .gold .btn {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+}
+
 .page-insurance .benefits {
   background: #000000;
   padding: 80px 0;
   color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .benefits {
+    padding: 40px 0;
+  }
 }
 
 .page-insurance .benefits .box-benefits {
@@ -2016,8 +2139,26 @@ a {
   gap: 40px;
 }
 
+@media (max-width: 320px) {
+  .page-insurance .benefits .box-benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .page-insurance .benefits .box-benefits .benefit {
   width: 320px;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .benefits .box-benefits .benefit {
+    width: 100%;
+  }
 }
 
 .page-insurance .benefits .box-benefits .benefit .legend {
@@ -2030,15 +2171,32 @@ a {
           flex-direction: column;
   margin: 4px 0 8px;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
   font-size: 28px;
   line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .benefits .box-benefits .benefit .legend {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .page-insurance .benefits .box-benefits .benefit p {
   font-family: "Roboto Mono", monospace;
   font-size: 18px;
   line-height: 28px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .benefits .box-benefits .benefit p {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .page-insurance .benefits .box-benefits .benefit:nth-of-type(1) .legend:before {
@@ -2075,12 +2233,30 @@ a {
   padding: 80px 0;
 }
 
+@media (max-width: 320px) {
+  .page-insurance .questions {
+    padding: 40px 0;
+  }
+}
+
 .page-insurance .questions .box-questions {
   margin-top: 40px;
 }
 
+@media (max-width: 320px) {
+  .page-insurance .questions .box-questions {
+    margin-top: 20px 0;
+  }
+}
+
 .page-insurance .questions .box-questions .question {
   padding: 20px;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .questions .box-questions .question {
+    padding: 10px;
+  }
 }
 
 .page-insurance .questions .box-questions .question:nth-child(odd) {
@@ -2100,10 +2276,6 @@ a {
 }
 
 .page-insurance .questions .box-questions .question .header-q h3 {
-  font-family: "Roboto Mono", monospace;
-  font-size: 28px;
-  line-height: 52px;
-  font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2111,6 +2283,19 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 28px;
+  line-height: 52px;
+  font-weight: 600;
+  color: #000000;
+}
+
+@media (max-width: 320px) {
+  .page-insurance .questions .box-questions .question .header-q h3 {
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+  }
 }
 
 .page-insurance .questions .box-questions .question .header-q h3::before {
@@ -2120,9 +2305,21 @@ a {
   background: #ffbb00;
 }
 
+@media (max-width: 320px) {
+  .page-insurance .questions .box-questions .question .header-q h3::before {
+    display: none;
+  }
+}
+
 .page-insurance .questions .box-questions .question .header-q img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media (max-width: 320px) {
+  .page-insurance .questions .box-questions .question .header-q img {
+    width: 20px;
+  }
 }
 
 .page-contact {

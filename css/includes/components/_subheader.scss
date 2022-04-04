@@ -2,16 +2,35 @@
   background: $chinese_black;
   padding: 60px 0;
 
+  @include mobile_s {
+    text-align: center;
+    padding: 30px 0;
+  }
+
   .legend {
-    @include roboto-01;
-    color: $gray;
     text-transform: uppercase;
     letter-spacing: 2px;
+    @include text(
+      $f_size: 20px,
+      $l_height: 28px,
+      $f_weight: 500,
+      $color: $gray
+    );
+
+    @include mobile_s {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
   }
 
   .titles-sec {
     color: $white;
     margin-top: 12px;
+
+    @include mobile_s {
+      margin-top: 8px;
+    }
 
     span {
       color: $selective_yellow;
