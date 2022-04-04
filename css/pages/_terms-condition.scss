@@ -2,6 +2,10 @@
   article {
     padding: 80px 0;
 
+    @include mobile_s {
+      padding: 40px 0;
+    }
+
     .content-term {
       margin-top: 40px;
       &:first-child {
@@ -26,6 +30,10 @@
         );
         margin-bottom: 12px;
         width: 700px;
+
+        @include mobile_s {
+          width: 100%;
+        }
 
         &:last-child {
           margin-bottom: 0;

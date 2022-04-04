@@ -3247,6 +3247,12 @@ a {
   padding: 80px 0;
 }
 
+@media (max-width: 320px) {
+  .page-terms-condition article {
+    padding: 40px 0;
+  }
+}
+
 .page-terms-condition article .content-term {
   margin-top: 40px;
 }
@@ -3272,6 +3278,12 @@ a {
   color: #000000;
   margin-bottom: 12px;
   width: 700px;
+}
+
+@media (max-width: 320px) {
+  .page-terms-condition article .content-term p {
+    width: 100%;
+  }
 }
 
 .page-terms-condition article .content-term p:last-child {
