@@ -1539,6 +1539,12 @@ a {
   padding-bottom: 80px;
 }
 
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description {
+    padding: 40px 0;
+  }
+}
+
 .page-bike-intern .gallery-description .__width {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1548,8 +1554,23 @@ a {
           justify-content: space-between;
 }
 
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .page-bike-intern .gallery-description .__width .gallery {
   width: 600px;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .gallery {
+    width: 100%;
+  }
 }
 
 .page-bike-intern .gallery-description .__width .gallery img {
@@ -1559,6 +1580,12 @@ a {
 
 .page-bike-intern .gallery-description .__width .gallery .principal {
   width: 600px;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .gallery .principal {
+    width: 100%;
+  }
 }
 
 .page-bike-intern .gallery-description .__width .gallery .select {
@@ -1579,8 +1606,20 @@ a {
   width: 190px;
 }
 
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .gallery .select .item {
+    width: 30%;
+  }
+}
+
 .page-bike-intern .gallery-description .__width .description {
   width: 510px;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .description {
+    width: 100%;
+  }
 }
 
 .page-bike-intern .gallery-description .__width .description p {
@@ -1589,6 +1628,14 @@ a {
   line-height: 36px;
   font-weight: 500;
   color: #d1d1d1;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .description p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
 }
 
 .page-bike-intern .gallery-description .__width .description .components {
@@ -1640,20 +1687,35 @@ a {
   height: 15px;
 }
 
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .description .components .btn {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
 .page-bike-intern .gallery-description .__width .description .information {
   width: 100%;
 }
 
 .page-bike-intern .gallery-description .__width .description .information .legend {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
   font-size: 28px;
   line-height: 36px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   color: #ffffff;
-  margin-bottom: 12px;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .description .information .legend {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
 }
 
 .page-bike-intern .gallery-description .__width .description .information .box-info {
@@ -1669,16 +1731,24 @@ a {
   width: 100%;
 }
 
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .description .information .box-info {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .page-bike-intern .gallery-description .__width .description .information .box-info .info {
   width: 100%;
 }
 
 .page-bike-intern .gallery-description .__width .description .information .box-info .info .legend {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 500;
   margin-bottom: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1687,6 +1757,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .page-bike-intern .gallery-description .__width .description .information .box-info .info .legend::before {
@@ -1694,10 +1769,12 @@ a {
 }
 
 .page-bike-intern .gallery-description .__width .description .information .box-info .info p {
+  margin-top: 8px;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 8px;
+  font-weight: 500;
+  color: #d1d1d1;
 }
 
 .page-bike-intern .gallery-description .__width .description .information .box-info .info:nth-of-type(1) .legend::before {
@@ -1721,15 +1798,22 @@ a {
 }
 
 .page-bike-intern .gallery-description .__width .description .datasheet .legend {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
   font-size: 28px;
   line-height: 36px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   color: #ffffff;
-  margin-bottom: 12px;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .description .datasheet .legend {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+  }
 }
 
 .page-bike-intern .gallery-description .__width .description .datasheet ul {
@@ -1738,6 +1822,12 @@ a {
   list-style: none;
   width: 100%;
   padding: 32px;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .description .datasheet ul {
+    padding: 20px;
+  }
 }
 
 .page-bike-intern .gallery-description .__width .description .datasheet ul li {
@@ -1753,6 +1843,14 @@ a {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .gallery-description .__width .description .datasheet ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .page-bike-intern .gallery-description .__width .description .datasheet ul li:first-child {
@@ -1774,6 +1872,16 @@ a {
 
 .page-bike-intern .see-too {
   padding: 80px 0 140px;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .see-too {
+    padding: 40px 0;
+  }
+}
+
+.page-bike-intern .see-too .titles-sec {
+  text-align: center;
 }
 
 .page-bike-intern .see-too .box-bike {
@@ -1860,9 +1968,21 @@ a {
   border-radius: 5px;
 }
 
+@media (max-width: 320px) {
+  .page-bike-intern .insurance img {
+    display: none;
+  }
+}
+
 .page-bike-intern .insurance .box-content {
   background: #121212;
   padding: 32px;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .insurance .box-content {
+    padding: 20px 0;
+  }
 }
 
 .page-bike-intern .insurance .box-content .__width {
@@ -1878,23 +1998,56 @@ a {
   width: 600px;
 }
 
+@media (max-width: 320px) {
+  .page-bike-intern .insurance .box-content .__width .content {
+    width: 100%;
+  }
+}
+
 .page-bike-intern .insurance .box-content .__width .content .titles-sec {
   color: #ffffff;
 }
 
+@media (max-width: 320px) {
+  .page-bike-intern .insurance .box-content .__width .content .titles-sec {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
 .page-bike-intern .insurance .box-content .__width .content p {
+  margin-block: 20px;
   font-family: "Roboto Mono", monospace;
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
   color: #d1d1d1;
-  margin-block: 20px;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .insurance .box-content .__width .content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .insurance .box-content .__width .content .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .page-bike-intern .insurance .back-black {
   height: 50px;
   width: 100%;
   background: #000000;
+}
+
+@media (max-width: 320px) {
+  .page-bike-intern .insurance .back-black {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {

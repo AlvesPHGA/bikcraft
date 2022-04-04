@@ -3,12 +3,24 @@
     background: $chinese_black;
     padding-bottom: 80px;
 
+    @include mobile_s {
+      padding: 40px 0;
+    }
+
     .__width {
       display: flex;
       justify-content: space-between;
 
+      @include mobile_s {
+        flex-direction: column;
+      }
+
       .gallery {
         width: 600px;
+
+        @include mobile_s {
+          width: 100%;
+        }
 
         img {
           width: 100%;
@@ -17,6 +29,10 @@
 
         .principal {
           width: 600px;
+
+          @include mobile_s {
+            width: 100%;
+          }
         }
 
         .select {
@@ -28,12 +44,20 @@
 
           .item {
             width: 190px;
+
+            @include mobile_s {
+              width: 30%;
+            }
           }
         }
       }
 
       .description {
         width: 510px;
+
+        @include mobile_s {
+          width: 100%;
+        }
 
         p {
           @include text(
@@ -42,6 +66,12 @@
             $f_weight: 500,
             $color: $american_silver
           );
+
+          @include mobile_s {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 20px;
+          }
         }
 
         .components {
@@ -80,18 +110,36 @@
               }
             }
           }
+
+          .btn {
+            @include mobile_s {
+              font-size: 14px;
+              line-height: 20px;
+              text-align: center;
+            }
+          }
         }
 
         .information {
           width: 100%;
 
           .legend {
-            @include legend-02($f_size: 28px, $l_height: 36px);
-            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: $white;
             margin-bottom: 12px;
+
+            @include title(
+              $f_size: 28px,
+              $l_height: 36px,
+              $f_weight: 700,
+              $color: $white
+            );
+
+            @include mobile_s {
+              font-size: 20px;
+              line-height: 32px;
+              text-align: center;
+            }
           }
 
           .box-info {
@@ -103,14 +151,25 @@
             column-gap: 20px;
             width: 100%;
 
+            @include mobile_s {
+              padding: 20px;
+              display: flex;
+              flex-direction: column;
+            }
+
             .info {
               width: 100%;
               .legend {
-                @include legend-02($f_size: 18px, $l_height: 24px);
-                font-weight: 500;
                 margin-bottom: 12px;
                 display: flex;
                 flex-direction: column;
+
+                @include title(
+                  $f_size: 18px,
+                  $l_height: 24px,
+                  $f_weight: 500,
+                  $color: $white
+                );
 
                 &::before {
                   height: 32px;
@@ -118,8 +177,14 @@
               }
 
               p {
-                @include roboto-03($f_size: 16px, $l_height: 24px);
                 margin-top: 8px;
+
+                @include text(
+                  $f_size: 16px,
+                  $l_height: 24px,
+                  $f_weight: 500,
+                  $color: $american_silver
+                );
               }
 
               &:nth-of-type(1) {
@@ -160,12 +225,22 @@
         .datasheet {
           margin-top: 32px;
           .legend {
-            @include legend-02($f_size: 28px, $l_height: 36px);
-            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: $white;
             margin-bottom: 12px;
+
+            @include title(
+              $f_size: 28px,
+              $l_height: 36px,
+              $f_weight: 700,
+              $color: $white
+            );
+
+            @include mobile_s {
+              font-size: 20px;
+              line-height: 32px;
+              text-align: center;
+            }
           }
 
           ul {
@@ -175,13 +250,27 @@
             width: 100%;
             padding: 32px;
 
+            @include mobile_s {
+              padding: 20px;
+            }
+
             li {
               display: flex;
               justify-content: space-between;
               border-bottom: 1px solid $charleston_green;
               padding: 8px 0;
-              @include roboto-03($f_size: 20px, $l_height: 28px);
-              font-weight: 500;
+
+              @include text(
+                $f_size: 20px,
+                $l_height: 28px,
+                $f_weight: 500,
+                $color: $white
+              );
+
+              @include mobile_s {
+                font-size: 16px;
+                line-height: 24px;
+              }
 
               &:first-child {
                 padding-top: 0;
@@ -209,6 +298,15 @@
 
   .see-too {
     padding: 80px 0 140px;
+
+    @include mobile_s {
+      padding: 40px 0;
+    }
+
+    .titles-sec {
+      text-align: center;
+    }
+
     .box-bike {
       display: flex;
       gap: 20px;
@@ -276,11 +374,19 @@
       width: 500px;
       height: 600px;
       border-radius: 5px;
+
+      @include mobile_s {
+        display: none;
+      }
     }
 
     .box-content {
       background: $chinese_black;
       padding: 32px;
+
+      @include mobile_s {
+        padding: 20px 0;
+      }
 
       .__width {
         display: flex;
@@ -289,15 +395,40 @@
         .content {
           width: 600px;
 
+          @include mobile_s {
+            width: 100%;
+          }
+
           .titles-sec {
             color: $white;
+
+            @include mobile_s {
+              font-size: 20px;
+              line-height: 28px;
+            }
           }
 
           p {
-            @include roboto-03($f_size: 24px, $l_height: 32px);
-            font-weight: 500;
-            color: $american_silver;
             margin-block: 20px;
+
+            @include text(
+              $f_size: 24px,
+              $l_height: 32px,
+              $f_weight: 500,
+              $color: $american_silver
+            );
+
+            @include mobile_s {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+
+          .btn {
+            @include mobile_s {
+              width: 100%;
+              text-align: center;
+            }
           }
         }
       }
@@ -307,6 +438,10 @@
       height: 50px;
       width: 100%;
       background: $black;
+
+      @include mobile_s {
+        display: none;
+      }
     }
   }
 }
