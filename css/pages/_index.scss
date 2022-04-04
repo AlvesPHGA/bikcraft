@@ -76,6 +76,7 @@
     .btn {
       @include mobile_s {
         margin: 0 auto;
+        width: 100%;
       }
     }
   }
@@ -86,9 +87,13 @@
 
     @include mobile_s {
       padding: 20px 0;
+      overflow-x: auto;
     }
 
     h2 {
+      @include mobile_s {
+        text-align: center;
+      }
       span {
         color: $selective_yellow;
       }
@@ -101,9 +106,21 @@
       justify-content: space-between;
       margin-top: 72px;
 
+      @include mobile_s {
+        width: 610px;
+        padding: 0 10px;
+        margin-top: 20px;
+
+        gap: 0;
+      }
+
       .card {
         width: 515px;
         padding-bottom: 5px;
+
+        @include mobile_s {
+          width: 190px;
+        }
 
         &:hover {
           background: #f8f7f7;
@@ -643,7 +660,9 @@
           margin-left: 20px;
 
           @include mobile_s {
-            margin: 0 auto;
+            width: 100%;
+            margin: 0;
+            text-align: center;
           }
         }
       }
@@ -669,7 +688,9 @@
           margin-left: 20px;
 
           @include mobile_s {
-            margin: 0 auto;
+            width: 100%;
+            margin: 0;
+            text-align: center;
           }
         }
       }

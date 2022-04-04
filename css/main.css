@@ -519,6 +519,7 @@ a {
 @media (max-width: 320px) {
   .page-index .subheader .btn {
     margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -530,6 +531,13 @@ a {
 @media (max-width: 320px) {
   .page-index .prod-bikes {
     padding: 20px 0;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .page-index .prod-bikes h2 {
+    text-align: center;
   }
 }
 
@@ -549,9 +557,24 @@ a {
   margin-top: 72px;
 }
 
+@media (max-width: 320px) {
+  .page-index .prod-bikes .bikes {
+    width: 610px;
+    padding: 0 10px;
+    margin-top: 20px;
+    gap: 0;
+  }
+}
+
 .page-index .prod-bikes .bikes .card {
   width: 515px;
   padding-bottom: 5px;
+}
+
+@media (max-width: 320px) {
+  .page-index .prod-bikes .bikes .card {
+    width: 190px;
+  }
 }
 
 .page-index .prod-bikes .bikes .card:hover {
@@ -1235,7 +1258,9 @@ a {
 
 @media (max-width: 320px) {
   .page-index .insurance .content .silver .btn {
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    text-align: center;
   }
 }
 
@@ -1262,7 +1287,9 @@ a {
 
 @media (max-width: 320px) {
   .page-index .insurance .content .gold .btn {
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    text-align: center;
   }
 }
 
