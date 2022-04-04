@@ -2,6 +2,10 @@
   .bikes {
     padding: 80px 0;
 
+    @include mobile_s {
+      padding: 40px 0;
+    }
+
     .box-bike {
       a {
         display: block;
@@ -12,11 +16,24 @@
         gap: 46px;
         padding: 40px 0;
 
+        @include mobile_s {
+          padding: 0 15px;
+        }
+
+        @include mobile_s {
+          flex-direction: column;
+        }
+
         .img {
           width: 500px;
           height: 320px;
           border-radius: 5px;
           position: relative;
+
+          @include mobile_s {
+            width: 100%;
+            height: 30vh;
+          }
 
           img {
             width: 100%;
@@ -29,19 +46,42 @@
             position: absolute;
             top: 10px;
             right: 0;
-            @include poppins-02;
-            color: $white;
             padding: 8px 16px 8px 8px;
             background: $black;
             border-radius: 5px 0 0 5px;
+            @include title(
+              $f_size: 24px,
+              $l_height: 28px,
+              $f_weight: 500,
+              $color: $white
+            );
+
+            @include mobile_s {
+              font-size: 16px;
+              line-height: 24px;
+            }
           }
         }
 
         .info-bike {
           width: 550px;
+
+          @include mobile_s {
+            width: 100%;
+          }
           .legend-02 {
-            @include legend-02($f_size: 40px, $l_height: 48px);
+            @include title(
+              $f_size: 40px,
+              $l_height: 48px,
+              $f_weight: 700,
+              $color: $black
+            );
             position: relative;
+
+            @include mobile_s {
+              font-size: 24px;
+              line-height: 32px;
+            }
 
             &::before {
               content: "";
@@ -51,18 +91,34 @@
               background: $selective_yellow;
               bottom: 45px;
               border-radius: 5px;
+
+              @include mobile_s {
+                bottom: 35px;
+              }
             }
           }
 
           p {
-            @include roboto-02;
             margin-block: 20px;
+            @include text(
+              $f_size: 18px,
+              $l_height: 28px,
+              $f_weight: 500,
+              $color: $black
+            );
+
+            @include mobile_s {
+              margin-block: 10px;
+              font-size: 16px;
+              line-height: 24px;
+            }
           }
 
           .components {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
+
             ul {
               list-style: none;
 
@@ -113,6 +169,12 @@
                 }
               }
             }
+
+            .btn {
+              @include mobile_s {
+                font-size: 14px;
+              }
+            }
           }
         }
       }
@@ -122,6 +184,12 @@
       position: relative;
       color: $white;
 
+      @include mobile_s {
+        margin-block: 20px;
+        color: $white;
+        padding-bottom: 5px;
+      }
+
       .black {
         width: 70%;
         position: absolute;
@@ -129,6 +197,21 @@
         background: $chinese_black;
         height: 100%;
         z-index: 0;
+
+        @include mobile_s {
+          width: 100%;
+          height: 80%;
+          bottom: 0;
+        }
+      }
+
+      .__width {
+        .info-bike {
+          .legend-02,
+          p {
+            color: $white;
+          }
+        }
       }
     }
   }

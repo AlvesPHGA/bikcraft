@@ -49,11 +49,7 @@ a {
 .btn {
   background: #ffbb00;
   border-radius: 5px;
-  font-family: "Poppins", sans-serif;
-  color: #000000;
-  font-size: 20px;
   text-transform: uppercase;
-  font-weight: 700;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -61,6 +57,11 @@ a {
   border: 0;
   cursor: pointer;
   display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .subheader {
@@ -1247,6 +1248,12 @@ a {
   padding: 80px 0;
 }
 
+@media (max-width: 320px) {
+  .page-bikes .bikes {
+    padding: 40px 0;
+  }
+}
+
 .page-bikes .bikes .box-bike a {
   display: block;
 }
@@ -1262,11 +1269,33 @@ a {
   padding: 40px 0;
 }
 
+@media (max-width: 320px) {
+  .page-bikes .bikes .box-bike .__width {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .page-bikes .bikes .box-bike .__width {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .page-bikes .bikes .box-bike .__width .img {
   width: 500px;
   height: 320px;
   border-radius: 5px;
   position: relative;
+}
+
+@media (max-width: 320px) {
+  .page-bikes .bikes .box-bike .__width .img {
+    width: 100%;
+    height: 30vh;
+  }
 }
 
 .page-bikes .bikes .box-bike .__width .img img {
@@ -1281,25 +1310,47 @@ a {
   position: absolute;
   top: 10px;
   right: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
-  color: #ffffff;
   padding: 8px 16px 8px 8px;
   background: #000000;
   border-radius: 5px 0 0 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .page-bikes .bikes .box-bike .__width .img span {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .page-bikes .bikes .box-bike .__width .info-bike {
   width: 550px;
 }
 
+@media (max-width: 320px) {
+  .page-bikes .bikes .box-bike .__width .info-bike {
+    width: 100%;
+  }
+}
+
 .page-bikes .bikes .box-bike .__width .info-bike .legend-02 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
   font-size: 40px;
   line-height: 48px;
+  font-weight: 700;
+  color: #000000;
   position: relative;
+}
+
+@media (max-width: 320px) {
+  .page-bikes .bikes .box-bike .__width .info-bike .legend-02 {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .page-bikes .bikes .box-bike .__width .info-bike .legend-02::before {
@@ -1312,11 +1363,27 @@ a {
   border-radius: 5px;
 }
 
+@media (max-width: 320px) {
+  .page-bikes .bikes .box-bike .__width .info-bike .legend-02::before {
+    bottom: 35px;
+  }
+}
+
 .page-bikes .bikes .box-bike .__width .info-bike p {
-  font-family: "Roboto Mono", monospace;
-  font-size: 16px;
-  line-height: 24px;
   margin-block: 20px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000000;
+}
+
+@media (max-width: 320px) {
+  .page-bikes .bikes .box-bike .__width .info-bike p {
+    margin-block: 10px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .page-bikes .bikes .box-bike .__width .info-bike .components {
@@ -1404,9 +1471,23 @@ a {
   height: 32px;
 }
 
+@media (max-width: 320px) {
+  .page-bikes .bikes .box-bike .__width .info-bike .components .btn {
+    font-size: 14px;
+  }
+}
+
 .page-bikes .bikes .magic-might {
   position: relative;
   color: #ffffff;
+}
+
+@media (max-width: 320px) {
+  .page-bikes .bikes .magic-might {
+    margin-block: 20px;
+    color: #ffffff;
+    padding-bottom: 5px;
+  }
 }
 
 .page-bikes .bikes .magic-might .black {
@@ -1416,6 +1497,19 @@ a {
   background: #121212;
   height: 100%;
   z-index: 0;
+}
+
+@media (max-width: 320px) {
+  .page-bikes .bikes .magic-might .black {
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+  }
+}
+
+.page-bikes .bikes .magic-might .__width .info-bike .legend-02,
+.page-bikes .bikes .magic-might .__width .info-bike p {
+  color: #ffffff;
 }
 
 .page-bike-intern .gallery-description {
