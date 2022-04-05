@@ -19,3 +19,25 @@ function getProd(parametro) {
 }
 
 parametro.forEach(getProd);
+
+// Expande perguntas
+const questions = document.querySelectorAll(".header-q");
+
+function show_question(el) {
+  const item = el.currentTarget;
+  const question = item.getAttribute("aria-controls");
+  const answer = document.getElementById(question);
+
+  answer.classList.toggle("__active");
+
+  const active = answer.classList.contains("__active");
+
+  item.setAttribute("aria-expanded", active);
+}
+
+function eventQuestions(e) {
+  e.addEventListener("click", show_question);
+}
+
+questions.forEach(eventQuestions);
+console.log(questions);

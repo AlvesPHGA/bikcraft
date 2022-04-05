@@ -2469,6 +2469,20 @@ a {
   padding: 80px 0;
 }
 
+.page-insurance .questions article {
+  padding: 0 20px;
+  display: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.page-insurance .questions article.__active {
+  display: block;
+}
+
 @media (max-width: 320px) {
   .page-insurance .questions {
     padding: 40px 0;
@@ -2487,6 +2501,7 @@ a {
 
 .page-insurance .questions .box-questions .question {
   padding: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 320px) {
@@ -2556,6 +2571,11 @@ a {
   .page-insurance .questions .box-questions .question .header-q img {
     width: 20px;
   }
+}
+
+.page-insurance .questions .box-questions .question [aria-expanded="true"] img {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .page-contact {
