@@ -574,7 +574,6 @@ a {
 @media (max-width: 320px) {
   .page-index .prod-bikes {
     padding: 20px 0;
-    overflow-x: auto;
   }
 }
 
@@ -586,6 +585,12 @@ a {
 
 .page-index .prod-bikes h2 span {
   color: #ffbb00;
+}
+
+@media (max-width: 320px) {
+  .page-index .prod-bikes .prods {
+    overflow-x: auto;
+  }
 }
 
 .page-index .prod-bikes .bikes {
@@ -606,6 +611,7 @@ a {
     padding: 0 10px;
     margin-top: 20px;
     gap: 0;
+    height: 290px;
   }
 }
 
@@ -617,6 +623,7 @@ a {
 @media (max-width: 320px) {
   .page-index .prod-bikes .bikes .card {
     width: 190px;
+    height: 286px;
   }
 }
 

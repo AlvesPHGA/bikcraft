@@ -87,7 +87,6 @@
 
     @include mobile_s {
       padding: 20px 0;
-      overflow-x: auto;
     }
 
     h2 {
@@ -96,6 +95,12 @@
       }
       span {
         color: $selective_yellow;
+      }
+    }
+
+    .prods {
+      @include mobile_s {
+        overflow-x: auto;
       }
     }
 
@@ -110,8 +115,8 @@
         width: 610px;
         padding: 0 10px;
         margin-top: 20px;
-
         gap: 0;
+        height: 290px;
       }
 
       .card {
@@ -120,6 +125,7 @@
 
         @include mobile_s {
           width: 190px;
+          height: 286px;
         }
 
         &:hover {
