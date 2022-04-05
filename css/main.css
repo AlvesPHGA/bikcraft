@@ -248,8 +248,16 @@ a {
   left: 0;
 }
 
-.header .box-width nav a:hover {
+.header .box-width nav a:hover, .header .box-width nav a.__active {
   color: #ffbb00;
+}
+
+.header .box-width nav a:hover::after, .header .box-width nav a.__active::after {
+  width: 100%;
+  background: #ffbb00;
+}
+
+.header .box-width nav a:hover {
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
 }
@@ -257,8 +265,6 @@ a {
 .header .box-width nav a:hover::after {
   -webkit-transition: all 0.7s linear;
   transition: all 0.7s linear;
-  width: 100%;
-  background: #ffbb00;
 }
 
 .footer {

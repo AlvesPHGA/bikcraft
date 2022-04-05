@@ -70,14 +70,20 @@
           left: 0;
         }
 
-        &:hover {
+        &:hover,
+        &.__active {
           color: $selective_yellow;
-          transition: all 0.7s linear;
 
           &::after {
-            transition: all 0.7s linear;
             width: 100%;
             background: $selective_yellow;
+          }
+        }
+
+        &:hover {
+          transition: all 0.7s linear;
+          &::after {
+            transition: all 0.7s linear;
           }
         }
       }
