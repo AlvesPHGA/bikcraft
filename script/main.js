@@ -40,4 +40,18 @@ function eventQuestions(e) {
 }
 
 questions.forEach(eventQuestions);
-console.log(questions);
+
+// Galeria fotos
+const picture = document.querySelectorAll(".select .item img");
+
+function show_gallery(el) {
+  const item = el.currentTarget;
+  const principal = document.getElementById("principal-img");
+  principal.src = item.src;
+}
+
+function gallery(el) {
+  el.addEventListener("click", show_gallery);
+}
+
+picture.forEach(gallery);
