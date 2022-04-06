@@ -7,6 +7,10 @@
 
   @include mobile_s {
     height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    top: 0;
   }
 
   a {
@@ -37,12 +41,18 @@
         width: 100vw;
         background: $black;
         z-index: 200;
-        position: absolute;
+        position: fixed;
         text-align: center;
         top: 70px;
         left: 0;
         gap: 15px;
         padding: 20px;
+      }
+
+      &.__active {
+        @include mobile_s {
+          display: flex;
+        }
       }
 
       a {

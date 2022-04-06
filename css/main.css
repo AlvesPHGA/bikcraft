@@ -73,6 +73,7 @@ a {
   .subheader {
     text-align: center;
     padding: 30px 0;
+    margin-top: 100px;
   }
 }
 
@@ -149,6 +150,38 @@ a {
   background: #ffffff;
 }
 
+.__hamburger-menu .box.__active {
+  background: transparent;
+}
+
+.__hamburger-menu .box.__active::before {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: #ffbb00;
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
+}
+
+.__hamburger-menu .box.__active::after {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: #ffbb00;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 .header {
   background: #000000;
   color: #ffffff;
@@ -164,6 +197,10 @@ a {
 @media (max-width: 320px) {
   .header {
     height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    top: 0;
   }
 }
 
@@ -211,12 +248,20 @@ a {
     width: 100vw;
     background: #000000;
     z-index: 200;
-    position: absolute;
+    position: fixed;
     text-align: center;
     top: 70px;
     left: 0;
     gap: 15px;
     padding: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header .box-width nav.__active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

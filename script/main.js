@@ -10,6 +10,17 @@ function active_link(el) {
 
 links_menu.forEach(active_link);
 
+// Menu mobile
+const menu_mobile = document.querySelector(".__hamburger-menu .box");
+
+menu_mobile.addEventListener("click", function () {
+  const menu = document.querySelector("nav");
+  const active = document.querySelector(".__hamburger-menu .box");
+
+  active.classList.toggle("__active");
+  menu.classList.toggle("__active");
+});
+
 // Itens orçamento
 const parametro = new URLSearchParams(location.search);
 

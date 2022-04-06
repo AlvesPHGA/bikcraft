@@ -33,5 +33,33 @@
       height: 3px;
       background: $white;
     }
+
+    &.__active {
+      background: transparent;
+
+      &::before {
+        transition: 0.7s ease;
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: $selective_yellow;
+        transform: rotate(140deg);
+      }
+
+      &::after {
+        transition: 0.7s ease;
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: $selective_yellow;
+        transform: rotate(45deg);
+      }
+    }
   }
 }
