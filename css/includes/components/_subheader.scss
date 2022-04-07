@@ -8,6 +8,13 @@
     margin-top: 100px;
   }
 
+  @include mobile_m {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 120px;
+    width: 100%;
+  }
+
   .legend {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -23,6 +30,12 @@
       line-height: 24px;
       text-align: center;
     }
+
+    @include mobile_m {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
   }
 
   .titles-sec {
@@ -30,6 +43,10 @@
     margin-top: 12px;
 
     @include mobile_s {
+      margin-top: 8px;
+    }
+
+    @include mobile_m {
       margin-top: 8px;
     }
 

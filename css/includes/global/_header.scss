@@ -16,9 +16,9 @@
   @include mobile_m {
     height: 120px;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 200;
-    top: 0;
+    top: 0px;
   }
 
   a {
@@ -35,7 +35,7 @@
 
     @include mobile_s {
       width: 100%;
-      padding: 0 15%;
+      padding: 0 15px;
       position: relative;
       justify-content: space-between;
       align-items: center;
@@ -43,7 +43,7 @@
 
     @include mobile_m {
       width: 100%;
-      padding: 0 10%;
+      padding: 0 20px;
       position: relative;
       justify-content: space-between;
       align-items: center;
@@ -69,14 +69,14 @@
         display: none;
         flex-direction: column;
         height: 100%;
-        width: 100%;
+        width: 100vw;
         background: $black;
         z-index: 200;
         position: fixed;
         text-align: center;
-        top: 70px;
+        top: 120px;
         left: 0;
-        gap: 15px;
+        gap: 30px;
         padding: 20px;
       }
 
