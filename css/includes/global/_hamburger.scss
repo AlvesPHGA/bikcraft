@@ -8,6 +8,10 @@
     display: block;
   }
 
+  @include mobile_m {
+    display: block;
+  }
+
   .box {
     width: 100%;
     height: 3px;

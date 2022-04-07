@@ -13,6 +13,14 @@
     top: 0;
   }
 
+  @include mobile_m {
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    top: 0;
+  }
+
   a {
     color: $white;
   }
@@ -27,7 +35,15 @@
 
     @include mobile_s {
       width: 100%;
-      padding: 0 15px;
+      padding: 0 15%;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include mobile_m {
+      width: 100%;
+      padding: 0 10%;
       position: relative;
       justify-content: space-between;
       align-items: center;
@@ -49,8 +65,27 @@
         padding: 20px;
       }
 
+      @include mobile_m {
+        display: none;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background: $black;
+        z-index: 200;
+        position: fixed;
+        text-align: center;
+        top: 70px;
+        left: 0;
+        gap: 15px;
+        padding: 20px;
+      }
+
       &.__active {
         @include mobile_s {
+          display: flex;
+        }
+
+        @include mobile_m {
           display: flex;
         }
       }
@@ -62,6 +97,11 @@
         position: relative;
 
         @include mobile_s {
+          font-size: 20px;
+          line-height: 36px;
+        }
+
+        @include mobile_m {
           font-size: 20px;
           line-height: 36px;
         }
