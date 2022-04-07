@@ -9,6 +9,11 @@
     line-height: 42px;
   }
 
+  @include mobile_m {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
   span {
     color: $selective_yellow;
   }
@@ -26,6 +31,6 @@
 
   @include mobile_m {
     width: 100%;
-    padding: 0 20%;
+    padding: 0 20px;
   }
 }
