@@ -6,6 +6,10 @@
       padding: 40px 0;
     }
 
+    @include mobile_m {
+      padding: 40px 0;
+    }
+
     .box-bike {
       a {
         display: block;
@@ -18,10 +22,12 @@
 
         @include mobile_s {
           padding: 0 15px;
+          flex-direction: column;
         }
 
-        @include mobile_s {
+        @include mobile_m {
           flex-direction: column;
+          padding: 0 15px;
         }
 
         .img {
@@ -31,6 +37,11 @@
           position: relative;
 
           @include mobile_s {
+            width: 100%;
+            height: 30vh;
+          }
+
+          @include mobile_m {
             width: 100%;
             height: 30vh;
           }
@@ -60,6 +71,11 @@
               font-size: 16px;
               line-height: 24px;
             }
+
+            @include mobile_m {
+              font-size: 16px;
+              line-height: 24px;
+            }
           }
         }
 
@@ -69,6 +85,11 @@
           @include mobile_s {
             width: 100%;
           }
+
+          @include mobile_m {
+            width: 100%;
+          }
+
           .legend-02 {
             @include title(
               $f_size: 40px,
@@ -79,6 +100,11 @@
             position: relative;
 
             @include mobile_s {
+              font-size: 24px;
+              line-height: 32px;
+            }
+
+            @include mobile_m {
               font-size: 24px;
               line-height: 32px;
             }
@@ -95,6 +121,10 @@
               @include mobile_s {
                 bottom: 35px;
               }
+
+              @include mobile_m {
+                bottom: 35px;
+              }
             }
           }
 
@@ -108,6 +138,12 @@
             );
 
             @include mobile_s {
+              margin-block: 10px;
+              font-size: 16px;
+              line-height: 24px;
+            }
+
+            @include mobile_m {
               margin-block: 10px;
               font-size: 16px;
               line-height: 24px;
@@ -174,6 +210,10 @@
               @include mobile_s {
                 font-size: 14px;
               }
+
+              @include mobile_m {
+                font-size: 14px;
+              }
             }
           }
         }
@@ -190,6 +230,12 @@
         padding-bottom: 5px;
       }
 
+      @include mobile_m {
+        margin-block: 40px;
+        color: $white;
+        padding-bottom: 10px;
+      }
+
       .black {
         width: 70%;
         position: absolute;
@@ -199,6 +245,12 @@
         z-index: 0;
 
         @include mobile_s {
+          width: 100%;
+          height: 80%;
+          bottom: 0;
+        }
+
+        @include mobile_m {
           width: 100%;
           height: 80%;
           bottom: 0;
