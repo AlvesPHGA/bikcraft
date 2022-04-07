@@ -2805,12 +2805,24 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .titles-sec {
+    text-align: center;
+  }
+}
+
 .page-insurance .sec-insure {
   background: #121212;
   padding-bottom: 80px;
 }
 
 @media (max-width: 320px) {
+  .page-insurance .sec-insure {
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .sec-insure {
     padding: 40px 0;
   }
@@ -2841,6 +2853,15 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .sec-insure .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .page-insurance .sec-insure .content .silver,
 .page-insurance .sec-insure .content .gold {
   padding: 32px 40px;
@@ -2849,6 +2870,14 @@ a {
 }
 
 @media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver,
+  .page-insurance .sec-insure .content .gold {
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .sec-insure .content .silver,
   .page-insurance .sec-insure .content .gold {
     padding: 20px;
@@ -2865,6 +2894,16 @@ a {
 }
 
 @media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver .header-ins,
+  .page-insurance .sec-insure .content .gold .header-ins {
+    gap: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .sec-insure .content .silver .header-ins,
   .page-insurance .sec-insure .content .gold .header-ins {
     gap: 0;
@@ -2903,6 +2942,14 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .sec-insure .content .silver .header-ins .box-price .price,
+  .page-insurance .sec-insure .content .gold .header-ins .box-price .price {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
 .page-insurance .sec-insure .content .silver .header-ins .box-price .month,
 .page-insurance .sec-insure .content .gold .header-ins .box-price .month {
   font-family: "Roboto Mono", monospace;
@@ -2913,6 +2960,14 @@ a {
 }
 
 @media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver .header-ins .box-price .month,
+  .page-insurance .sec-insure .content .gold .header-ins .box-price .month {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .sec-insure .content .silver .header-ins .box-price .month,
   .page-insurance .sec-insure .content .gold .header-ins .box-price .month {
     font-size: 14px;
@@ -2951,6 +3006,14 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .sec-insure .content .silver ul li,
+  .page-insurance .sec-insure .content .gold ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .page-insurance .sec-insure .content .silver ul li::before,
 .page-insurance .sec-insure .content .gold ul li::before {
   position: relative;
@@ -2974,6 +3037,13 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .sec-insure .content .silver .legend {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
 .page-insurance .sec-insure .content .silver .btn {
   background: #292929;
   color: #ffffff;
@@ -2981,6 +3051,14 @@ a {
 }
 
 @media (max-width: 320px) {
+  .page-insurance .sec-insure .content .silver .btn {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .sec-insure .content .silver .btn {
     width: 100%;
     margin: 0;
@@ -3004,12 +3082,27 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .sec-insure .content .gold .legend {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
 .page-insurance .sec-insure .content .gold .btn {
   background: #ca9700;
   margin-left: 20px;
 }
 
 @media (max-width: 320px) {
+  .page-insurance .sec-insure .content .gold .btn {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .sec-insure .content .gold .btn {
     width: 100%;
     margin: 0;
@@ -3024,6 +3117,12 @@ a {
 }
 
 @media (max-width: 320px) {
+  .page-insurance .benefits {
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .benefits {
     padding: 40px 0;
   }
@@ -3053,11 +3152,29 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .benefits .box-benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .page-insurance .benefits .box-benefits .benefit {
   width: 320px;
 }
 
 @media (max-width: 320px) {
+  .page-insurance .benefits .box-benefits .benefit {
+    width: 100%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .benefits .box-benefits .benefit {
     width: 100%;
   }
@@ -3086,6 +3203,13 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .benefits .box-benefits .benefit .legend {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
 .page-insurance .benefits .box-benefits .benefit p {
   font-family: "Roboto Mono", monospace;
   font-size: 18px;
@@ -3095,6 +3219,13 @@ a {
 }
 
 @media (max-width: 320px) {
+  .page-insurance .benefits .box-benefits .benefit p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .benefits .box-benefits .benefit p {
     font-size: 18px;
     line-height: 28px;
@@ -3155,11 +3286,23 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .questions {
+    padding: 40px 0;
+  }
+}
+
 .page-insurance .questions .box-questions {
   margin-top: 40px;
 }
 
 @media (max-width: 320px) {
+  .page-insurance .questions .box-questions {
+    margin-top: 20px 0;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .questions .box-questions {
     margin-top: 20px 0;
   }
@@ -3171,6 +3314,12 @@ a {
 }
 
 @media (max-width: 320px) {
+  .page-insurance .questions .box-questions .question {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .questions .box-questions .question {
     padding: 10px;
   }
@@ -3215,6 +3364,14 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .questions .box-questions .question .header-q h3 {
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+  }
+}
+
 .page-insurance .questions .box-questions .question .header-q h3::before {
   content: "";
   width: 20px;
@@ -3228,12 +3385,24 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-insurance .questions .box-questions .question .header-q h3::before {
+    display: none;
+  }
+}
+
 .page-insurance .questions .box-questions .question .header-q img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
 @media (max-width: 320px) {
+  .page-insurance .questions .box-questions .question .header-q img {
+    width: 20px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-insurance .questions .box-questions .question .header-q img {
     width: 20px;
   }

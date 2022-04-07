@@ -3,12 +3,21 @@
     @include mobile_s {
       text-align: center;
     }
+
+    @include mobile_m {
+      text-align: center;
+    }
   }
+
   .sec-insure {
     background: $chinese_black;
     padding-bottom: 80px;
 
     @include mobile_s {
+      padding: 40px 0;
+    }
+
+    @include mobile_m {
       padding: 40px 0;
     }
 
@@ -25,6 +34,10 @@
         flex-direction: column;
       }
 
+      @include mobile_m {
+        flex-direction: column;
+      }
+
       .silver,
       .gold {
         padding: 32px 40px;
@@ -36,11 +49,21 @@
           width: 100%;
         }
 
+        @include mobile_m {
+          padding: 20px;
+          width: 100%;
+        }
+
         .header-ins {
           display: flex;
           gap: 260px;
 
           @include mobile_s {
+            gap: 0;
+            justify-content: space-between;
+          }
+
+          @include mobile_m {
             gap: 0;
             justify-content: space-between;
           }
@@ -62,6 +85,11 @@
                 font-size: 20px;
                 line-height: 28px;
               }
+
+              @include mobile_m {
+                font-size: 20px;
+                line-height: 28px;
+              }
             }
 
             .month {
@@ -73,6 +101,11 @@
               );
 
               @include mobile_s {
+                font-size: 14px;
+                line-height: 18px;
+              }
+
+              @include mobile_m {
                 font-size: 14px;
                 line-height: 18px;
               }
@@ -100,6 +133,11 @@
               line-height: 24px;
             }
 
+            @include mobile_m {
+              font-size: 16px;
+              line-height: 24px;
+            }
+
             &::before {
               position: relative;
               content: url("../../images/icones/lista.svg");
@@ -123,6 +161,11 @@
             font-size: 20px;
             line-height: 28px;
           }
+
+          @include mobile_m {
+            font-size: 20px;
+            line-height: 28px;
+          }
         }
 
         .btn {
@@ -131,6 +174,12 @@
           margin-left: 20px;
 
           @include mobile_s {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+          }
+
+          @include mobile_m {
             width: 100%;
             margin: 0;
             text-align: center;
@@ -152,6 +201,11 @@
             font-size: 20px;
             line-height: 28px;
           }
+
+          @include mobile_m {
+            font-size: 20px;
+            line-height: 28px;
+          }
         }
 
         .btn {
@@ -159,6 +213,12 @@
           margin-left: 20px;
 
           @include mobile_s {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+          }
+
+          @include mobile_m {
             width: 100%;
             margin: 0;
             text-align: center;
@@ -177,6 +237,10 @@
       padding: 40px 0;
     }
 
+    @include mobile_m {
+      padding: 40px 0;
+    }
+
     .box-benefits {
       margin-top: 40px;
       display: grid;
@@ -189,10 +253,19 @@
         flex-direction: column;
       }
 
+      @include mobile_m {
+        display: flex;
+        flex-direction: column;
+      }
+
       .benefit {
         width: 320px;
 
         @include mobile_s {
+          width: 100%;
+        }
+
+        @include mobile_m {
           width: 100%;
         }
 
@@ -211,6 +284,11 @@
             font-size: 20px;
             line-height: 32px;
           }
+
+          @include mobile_m {
+            font-size: 20px;
+            line-height: 32px;
+          }
         }
 
         p {
@@ -222,6 +300,11 @@
           );
 
           @include mobile_s {
+            font-size: 18px;
+            line-height: 28px;
+          }
+
+          @include mobile_m {
             font-size: 18px;
             line-height: 28px;
           }
@@ -306,10 +389,18 @@
       padding: 40px 0;
     }
 
+    @include mobile_m {
+      padding: 40px 0;
+    }
+
     .box-questions {
       margin-top: 40px;
 
       @include mobile_s {
+        margin-top: 20px 0;
+      }
+
+      @include mobile_m {
         margin-top: 20px 0;
       }
 
@@ -318,6 +409,10 @@
         cursor: pointer;
 
         @include mobile_s {
+          padding: 10px;
+        }
+
+        @include mobile_m {
           padding: 10px;
         }
 
@@ -347,6 +442,12 @@
               position: relative;
             }
 
+            @include mobile_m {
+              font-size: 18px;
+              line-height: 28px;
+              position: relative;
+            }
+
             &::before {
               content: "";
               width: 20px;
@@ -356,6 +457,10 @@
               @include mobile_s {
                 display: none;
               }
+
+              @include mobile_m {
+                display: none;
+              }
             }
           }
 
@@ -363,6 +468,10 @@
             transform: rotate(180deg);
 
             @include mobile_s {
+              width: 20px;
+            }
+
+            @include mobile_m {
               width: 20px;
             }
           }
