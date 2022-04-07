@@ -4511,6 +4511,12 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-terms-condition article {
+    padding: 40px 0;
+  }
+}
+
 .page-terms-condition article .content-term {
   margin-top: 40px;
 }
@@ -4539,6 +4545,12 @@ a {
 }
 
 @media (max-width: 320px) {
+  .page-terms-condition article .content-term p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
   .page-terms-condition article .content-term p {
     width: 100%;
   }

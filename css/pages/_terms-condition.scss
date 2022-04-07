@@ -6,6 +6,10 @@
       padding: 40px 0;
     }
 
+    @include mobile_m {
+      padding: 40px 0;
+    }
+
     .content-term {
       margin-top: 40px;
       &:first-child {
@@ -32,6 +36,10 @@
         width: 700px;
 
         @include mobile_s {
+          width: 100%;
+        }
+
+        @include mobile_m {
           width: 100%;
         }
 
