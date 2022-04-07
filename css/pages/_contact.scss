@@ -15,6 +15,10 @@
       @include mobile_s {
         top: 370px;
       }
+
+      @include mobile_m {
+        top: 370px;
+      }
     }
 
     .__width {
@@ -22,6 +26,11 @@
       padding: 45px 40px;
 
       @include mobile_s {
+        padding: 20px 15px 0;
+        flex-direction: column-reverse;
+      }
+
+      @include mobile_m {
         padding: 20px 15px 0;
         flex-direction: column-reverse;
       }
@@ -37,6 +46,11 @@
           width: 100%;
         }
 
+        @include mobile_m {
+          padding: 20px;
+          width: 100%;
+        }
+
         .legend {
           @include title(
             $f_size: 20px,
@@ -46,6 +60,10 @@
           );
 
           @include mobile_s {
+            text-align: center;
+          }
+
+          @include mobile_m {
             text-align: center;
           }
         }
@@ -76,6 +94,14 @@
             gap: 0;
           }
 
+          @include mobile_m {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0 10px;
+            flex-direction: column;
+            gap: 0;
+          }
+
           &::before {
             content: url("../../images/icones/local.svg");
             height: 32px;
@@ -83,7 +109,12 @@
             position: absolute;
             right: 160px;
             top: 5px;
+
             @include mobile_s {
+              position: static;
+            }
+
+            @include mobile_m {
               position: static;
             }
           }
@@ -103,6 +134,13 @@
             margin-top: 30px;
           }
 
+          @include mobile_m {
+            gap: 0;
+            margin: 0;
+            align-items: center;
+            margin-top: 30px;
+          }
+
           &::before {
             content: url("../../images/icones/email.svg");
             height: 32px;
@@ -112,6 +150,11 @@
             top: 5px;
 
             @include mobile_s {
+              position: static;
+              margin: 0;
+            }
+
+            @include mobile_m {
               position: static;
               margin: 0;
             }
@@ -130,6 +173,13 @@
             align-items: center;
           }
 
+          @include mobile_m {
+            margin: 20px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
           &::before {
             content: url("../../images/icones/telefone.svg");
             height: 32px;
@@ -141,6 +191,10 @@
             @include mobile_s {
               position: static;
             }
+
+            @include mobile_m {
+              position: static;
+            }
           }
         }
 
@@ -149,6 +203,11 @@
           gap: 30px;
 
           @include mobile_s {
+            margin: 30px auto 0;
+            justify-content: center;
+          }
+
+          @include mobile_m {
             margin: 30px auto 0;
             justify-content: center;
           }
@@ -163,6 +222,11 @@
         box-shadow: 2px 5px 14px 0px rgba(0, 0, 0, 0.49);
 
         @include mobile_s {
+          padding: 20px;
+          width: 100%;
+        }
+
+        @include mobile_m {
           padding: 20px;
           width: 100%;
         }
@@ -189,6 +253,7 @@
             border-radius: 5px;
             border: none;
             padding: 16px;
+
             @include text(
               $f_size: 16px,
               $l_height: 24px,
@@ -213,6 +278,10 @@
               flex-direction: column;
             }
 
+            @include mobile_m {
+              flex-direction: column;
+            }
+
             .name,
             .tel {
               display: flex;
@@ -224,6 +293,10 @@
               width: 300px;
 
               @include mobile_s {
+                width: 100%;
+              }
+
+              @include mobile_m {
                 width: 100%;
               }
             }
@@ -246,6 +319,10 @@
             @include mobile_s {
               width: 100%;
             }
+
+            @include mobile_m {
+              width: 100%;
+            }
           }
         }
       }
@@ -259,8 +336,16 @@
       padding: 60px 0 40px;
     }
 
+    @include mobile_m {
+      padding: 60px 0 40px;
+    }
+
     .titles-sec {
       @include mobile_s {
+        text-align: center;
+      }
+
+      @include mobile_m {
         text-align: center;
       }
     }
@@ -276,6 +361,11 @@
         gap: 20px;
       }
 
+      @include mobile_m {
+        margin-top: 20px;
+        gap: 20px;
+      }
+
       .card-store {
         width: 580px;
         background: $white;
@@ -283,6 +373,10 @@
         border-radius: 5px;
 
         @include mobile_s {
+          width: 100%;
+        }
+
+        @include mobile_m {
           width: 100%;
         }
 
@@ -300,6 +394,7 @@
 
         .infos {
           padding: 40px 0 0 20px;
+
           .legend {
             @include legend-02($f_size: 32px, $l_height: 44px);
             display: flex;
@@ -321,6 +416,12 @@
             margin: 20px 0 60px;
 
             @include mobile_s {
+              flex-direction: column;
+              margin-bottom: 30px;
+              gap: 20px;
+            }
+
+            @include mobile_m {
               flex-direction: column;
               margin-bottom: 30px;
               gap: 20px;
@@ -362,6 +463,10 @@
             );
 
             @include mobile_s {
+              margin-left: 0;
+            }
+
+            @include mobile_m {
               margin-left: 0;
             }
 
