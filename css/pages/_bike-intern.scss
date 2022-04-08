@@ -7,6 +7,10 @@
       padding: 40px 0;
     }
 
+    @include mobile_m {
+      padding: 40px 0;
+    }
+
     .__width {
       display: flex;
       justify-content: space-between;
@@ -15,10 +19,18 @@
         flex-direction: column;
       }
 
+      @include mobile_m {
+        flex-direction: column;
+      }
+
       .gallery {
         width: 600px;
 
         @include mobile_s {
+          width: 100%;
+        }
+
+        @include mobile_m {
           width: 100%;
         }
 
@@ -31,6 +43,10 @@
           width: 600px;
 
           @include mobile_s {
+            width: 100%;
+          }
+
+          @include mobile_m {
             width: 100%;
           }
         }
@@ -48,6 +64,10 @@
             @include mobile_s {
               width: 30%;
             }
+
+            @include mobile_m {
+              width: 30%;
+            }
           }
         }
       }
@@ -56,6 +76,10 @@
         width: 510px;
 
         @include mobile_s {
+          width: 100%;
+        }
+
+        @include mobile_m {
           width: 100%;
         }
 
@@ -72,6 +96,12 @@
             line-height: 24px;
             margin-top: 20px;
           }
+
+          @include mobile_m {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 20px;
+          }
         }
 
         .components {
@@ -79,6 +109,16 @@
           align-items: center;
           gap: 10px;
           margin: 28px 0 32px;
+
+          @include mobile_s {
+            width: 100%;
+            flex-direction: column;
+          }
+
+          @include mobile_m {
+            width: 100%;
+            flex-direction: column;
+          }
 
           .info-utils {
             display: flex;
@@ -117,6 +157,12 @@
               line-height: 20px;
               text-align: center;
             }
+
+            @include mobile_m {
+              font-size: 14px;
+              line-height: 20px;
+              text-align: center;
+            }
           }
         }
 
@@ -140,6 +186,12 @@
               line-height: 32px;
               text-align: center;
             }
+
+            @include mobile_m {
+              font-size: 20px;
+              line-height: 32px;
+              text-align: center;
+            }
           }
 
           .box-info {
@@ -152,6 +204,12 @@
             width: 100%;
 
             @include mobile_s {
+              padding: 20px;
+              display: flex;
+              flex-direction: column;
+            }
+
+            @include mobile_m {
               padding: 20px;
               display: flex;
               flex-direction: column;
@@ -241,6 +299,12 @@
               line-height: 32px;
               text-align: center;
             }
+
+            @include mobile_m {
+              font-size: 20px;
+              line-height: 32px;
+              text-align: center;
+            }
           }
 
           ul {
@@ -251,6 +315,10 @@
             padding: 32px;
 
             @include mobile_s {
+              padding: 20px;
+            }
+
+            @include mobile_m {
               padding: 20px;
             }
 
@@ -268,6 +336,11 @@
               );
 
               @include mobile_s {
+                font-size: 16px;
+                line-height: 24px;
+              }
+
+              @include mobile_m {
                 font-size: 16px;
                 line-height: 24px;
               }
@@ -303,6 +376,10 @@
       padding: 40px 0;
     }
 
+    @include mobile_m {
+      padding: 40px 0;
+    }
+
     .titles-sec {
       text-align: center;
     }
@@ -313,6 +390,7 @@
       width: 100%;
       justify-content: space-between;
       margin-top: 40px;
+
       .card {
         width: 515px;
         border-radius: 5px;
@@ -336,16 +414,21 @@
           padding-left: 30px;
 
           .legend {
-            @include poppins-01;
-            color: $black;
-            font-weight: 700;
+            @include title(
+              $f_size: 20px,
+              $l_height: 28px,
+              $f_weight: 700,
+              $color: $black
+            );
           }
 
           .price {
-            @include roboto-02;
-            line-height: 20px;
-            color: $gray;
-            font-weight: 500;
+            @include text(
+              $f_size: 16px,
+              $l_height: 24px,
+              $f_weight: 500,
+              $color: $gray
+            );
           }
 
           &::before {
@@ -378,6 +461,10 @@
       @include mobile_s {
         display: none;
       }
+
+      @include mobile_m {
+        display: none;
+      }
     }
 
     .box-content {
@@ -385,6 +472,10 @@
       padding: 32px;
 
       @include mobile_s {
+        padding: 20px 0;
+      }
+
+      @include mobile_m {
         padding: 20px 0;
       }
 
@@ -399,10 +490,19 @@
             width: 100%;
           }
 
+          @include mobile_m {
+            width: 100%;
+          }
+
           .titles-sec {
             color: $white;
 
             @include mobile_s {
+              font-size: 20px;
+              line-height: 28px;
+            }
+
+            @include mobile_m {
               font-size: 20px;
               line-height: 28px;
             }
@@ -422,10 +522,20 @@
               font-size: 16px;
               line-height: 24px;
             }
+
+            @include mobile_m {
+              font-size: 16px;
+              line-height: 24px;
+            }
           }
 
           .btn {
             @include mobile_s {
+              width: 100%;
+              text-align: center;
+            }
+
+            @include mobile_m {
               width: 100%;
               text-align: center;
             }
