@@ -9,6 +9,10 @@
       padding-bottom: 40px;
     }
 
+    @include mobile_m {
+      padding-bottom: 40px;
+    }
+
     .back-black {
       height: 70%;
       background: $chinese_black;

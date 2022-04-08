@@ -4243,6 +4243,12 @@ a {
   }
 }
 
+@media (min-width: 321px) and (max-width: 375px) {
+  .page-budget .option-budget {
+    padding-bottom: 40px;
+  }
+}
+
 .page-budget .option-budget .back-black {
   height: 70%;
   background: #121212;
