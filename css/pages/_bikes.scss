@@ -10,6 +10,10 @@
       padding: 40px 0;
     }
 
+    @include mobile_l {
+      padding: 40px 0;
+    }
+
     .box-bike {
       a {
         display: block;
@@ -30,6 +34,11 @@
           padding: 0 15px;
         }
 
+        @include mobile_l {
+          flex-direction: column;
+          padding: 0 15px;
+        }
+
         .img {
           width: 500px;
           height: 320px;
@@ -42,6 +51,11 @@
           }
 
           @include mobile_m {
+            width: 100%;
+            height: 30vh;
+          }
+
+          @include mobile_l {
             width: 100%;
             height: 30vh;
           }
@@ -76,6 +90,11 @@
               font-size: 16px;
               line-height: 24px;
             }
+
+            @include mobile_l {
+              font-size: 16px;
+              line-height: 24px;
+            }
           }
         }
 
@@ -87,6 +106,10 @@
           }
 
           @include mobile_m {
+            width: 100%;
+          }
+
+          @include mobile_l {
             width: 100%;
           }
 
@@ -109,6 +132,11 @@
               line-height: 32px;
             }
 
+            @include mobile_l {
+              font-size: 24px;
+              line-height: 32px;
+            }
+
             &::before {
               content: "";
               width: 20px;
@@ -123,6 +151,10 @@
               }
 
               @include mobile_m {
+                bottom: 35px;
+              }
+
+              @include mobile_l {
                 bottom: 35px;
               }
             }
@@ -144,6 +176,12 @@
             }
 
             @include mobile_m {
+              margin-block: 10px;
+              font-size: 16px;
+              line-height: 24px;
+            }
+
+            @include mobile_l {
               margin-block: 10px;
               font-size: 16px;
               line-height: 24px;
@@ -214,6 +252,10 @@
               @include mobile_m {
                 font-size: 14px;
               }
+
+              @include mobile_l {
+                font-size: 14px;
+              }
             }
           }
         }
@@ -236,6 +278,12 @@
         padding-bottom: 10px;
       }
 
+      @include mobile_l {
+        margin-block: 40px;
+        color: $white;
+        padding-bottom: 10px;
+      }
+
       .black {
         width: 70%;
         position: absolute;
@@ -251,6 +299,12 @@
         }
 
         @include mobile_m {
+          width: 100%;
+          height: 80%;
+          bottom: 0;
+        }
+
+        @include mobile_l {
           width: 100%;
           height: 80%;
           bottom: 0;
