@@ -2,7 +2,7 @@
 
 This project is Origamid courses, it consist a fictional project, is a site your name is "Bikcraft".
 
-## Technologys
+## Technologies
 
 1. HTML
 2. CSS
